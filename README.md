@@ -1,14 +1,12 @@
 # jev-demos
 
-Demos with **Jev**, TypeSafe's System One model: a model that returns typed decisions with
-probabilities and never writes a word. One folder per demo, each self-contained with its own
-README, requirements and keys. The videos are on **The Agentic Enterprise** on YouTube.
+Demos with Jev, TypeSafe's System One model. One folder per demo, each self-contained: its own
+README with the architecture, its own requirements and key names. The videos are on
+The Agentic Enterprise on YouTube.
 
-| folder | what it shows | video |
-|---|---|---|
-| [`jev-fetches-claude-writes/`](jev-fetches-claude-writes/) | Jev picks the lookups, the harness runs them, Claude writes once: 1.7x faster, 5.8x cheaper on a toy support agent | What is Jev? TypeSafe's System One model, paired with Claude |
-
-Every folder runs on its own:
+| folder | contents |
+|---|---|
+| [`jev-fetches-claude-writes/`](jev-fetches-claude-writes/) | two agents (Claude alone; Jev fetches, Claude writes), the lookup tools and data, offline tests, and the notebook that runs eight tasks both ways |
 
 ```bash
 cd <folder>
@@ -17,5 +15,4 @@ pip install -r requirements.txt
 cp .env.example .env      # add the keys that folder's README names
 ```
 
-Jev's own speed and price figures are TypeSafe's; the numbers in each folder are mine, on my
-tasks, and yours will differ. MIT licence for everything here.
+MIT licence for everything here.
