@@ -109,6 +109,10 @@ Eight tasks, both arms, three repeats each: 48 runs on claude-sonnet-5, 21 Sep 2
 
 Jev's own bill for all 24 runs was about a quarter of a cent.
 
+## The data is synthetic
+
+The data in this demo is synthetic. The customers, orders, shipments, invoices, tickets and policies in `data.json` and `tasks.json` were made up for this demo and for nothing else. Any resemblance to real people, companies, orders or records is purely coincidental.
+
 ## Run it
 
 ```bash

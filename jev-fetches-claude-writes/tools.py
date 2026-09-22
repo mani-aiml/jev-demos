@@ -1,4 +1,7 @@
-"""Read-only lookup tools with simulated network latency."""
+"""Read-only lookup tools with simulated network latency.
+
+The records in data.json are synthetic, made up for this demo and for nothing else. Any
+resemblance to real people, companies, orders or records is purely coincidental."""
 
 import asyncio
 import json

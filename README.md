@@ -15,4 +15,7 @@ pip install -r requirements.txt
 cp .env.example .env      # add the keys that folder's README names
 ```
 
+All data in these demos is synthetic, made up for the demo it sits in and for nothing else. Any
+resemblance to real people, companies or records is purely coincidental.
+
 MIT licence for everything here.
