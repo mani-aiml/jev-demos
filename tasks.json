@@ -1,0 +1,10 @@
+[
+  {"id": "late-gateway", "task": "Customer C-17 says their gateway order never arrived. Find out what happened to it and whether they can get a refund."},
+  {"id": "double-charge", "task": "Customer C-23 opened a ticket about being charged twice. Check whether that is true and what our policy says we owe them."},
+  {"id": "dead-switch", "task": "Customer C-31 reports a dead port on the switch from order O-1063. Is it under warranty, and can we ship a replacement today?"},
+  {"id": "backorder", "task": "When will order O-1090 ship? Tell me what it is waiting on."},
+  {"id": "in-transit", "task": "Give me a status update on order O-1084: where is it and has it been paid?"},
+  {"id": "unpaid", "task": "Order O-1077 looks stuck in processing. Is it a payment problem or a stock problem?"},
+  {"id": "account-review", "task": "Prepare a quick account review for customer C-31: open tickets, and the state of each of their orders."},
+  {"id": "policy-only", "task": "What is our refund policy for customers in the UK?"}
+]

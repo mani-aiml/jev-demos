@@ -1,0 +1,56 @@
+{
+  "customers": {
+    "C-17": {"name": "Priya Nair", "region": "EU", "tier": "business", "order_ids": ["O-1042", "O-1077"]},
+    "C-23": {"name": "Marcus Hill", "region": "US", "tier": "starter", "order_ids": ["O-1051"]},
+    "C-31": {"name": "Aiko Tanaka", "region": "UK", "tier": "enterprise", "order_ids": ["O-1063", "O-1090"]},
+    "C-48": {"name": "Ravi Menon", "region": "IN", "tier": "business", "order_ids": ["O-1084"]}
+  },
+  "orders": {
+    "O-1042": {"customer_id": "C-17", "status": "shipped", "placed": "2026-09-02", "skus": ["SKU-301"], "total": 1840.0},
+    "O-1077": {"customer_id": "C-17", "status": "processing", "placed": "2026-09-15", "skus": ["SKU-302", "SKU-305"], "total": 612.5},
+    "O-1051": {"customer_id": "C-23", "status": "delivered", "placed": "2026-08-20", "skus": ["SKU-303"], "total": 249.0},
+    "O-1063": {"customer_id": "C-31", "status": "delivered", "placed": "2026-08-28", "skus": ["SKU-304"], "total": 5200.0},
+    "O-1090": {"customer_id": "C-31", "status": "backordered", "placed": "2026-09-17", "skus": ["SKU-305"], "total": 930.0},
+    "O-1084": {"customer_id": "C-48", "status": "shipped", "placed": "2026-09-10", "skus": ["SKU-301", "SKU-303"], "total": 2089.0}
+  },
+  "shipments": {
+    "O-1042": {"carrier": "DHL", "status": "held at customs", "last_scan": "2026-09-09 Leipzig", "eta": null},
+    "O-1051": {"carrier": "UPS", "status": "delivered", "last_scan": "2026-08-24 Austin", "eta": "2026-08-24"},
+    "O-1063": {"carrier": "Royal Mail", "status": "delivered", "last_scan": "2026-09-01 Leeds", "eta": "2026-09-01"},
+    "O-1084": {"carrier": "Blue Dart", "status": "in transit", "last_scan": "2026-09-19 Pune", "eta": "2026-09-23"}
+  },
+  "invoices": {
+    "O-1042": {"amount": 1840.0, "paid": true, "charges": [{"date": "2026-09-02", "amount": 1840.0}]},
+    "O-1077": {"amount": 612.5, "paid": false, "charges": []},
+    "O-1051": {"amount": 249.0, "paid": true, "charges": [{"date": "2026-08-20", "amount": 249.0}, {"date": "2026-08-20", "amount": 249.0}]},
+    "O-1063": {"amount": 5200.0, "paid": true, "charges": [{"date": "2026-08-28", "amount": 5200.0}]},
+    "O-1090": {"amount": 930.0, "paid": true, "charges": [{"date": "2026-09-17", "amount": 930.0}]},
+    "O-1084": {"amount": 2089.0, "paid": true, "charges": [{"date": "2026-09-10", "amount": 2089.0}]}
+  },
+  "inventory": {
+    "SKU-301": {"name": "Edge gateway G2", "in_stock": 14, "restock": null},
+    "SKU-302": {"name": "Sensor pack (10)", "in_stock": 220, "restock": null},
+    "SKU-303": {"name": "Rack mount kit", "in_stock": 3, "restock": "2026-10-01"},
+    "SKU-304": {"name": "Core switch S48", "in_stock": 0, "restock": "2026-10-12"},
+    "SKU-305": {"name": "PoE injector", "in_stock": 0, "restock": "2026-09-30"}
+  },
+  "warranties": {
+    "SKU-301": {"months": 24, "covers": "hardware faults, advance replacement"},
+    "SKU-302": {"months": 12, "covers": "hardware faults"},
+    "SKU-303": {"months": 12, "covers": "manufacturing defects"},
+    "SKU-304": {"months": 36, "covers": "hardware faults, next business day replacement"},
+    "SKU-305": {"months": 12, "covers": "hardware faults"}
+  },
+  "tickets": {
+    "C-17": [{"id": "T-881", "opened": "2026-09-12", "subject": "Where is my gateway?", "status": "open"}],
+    "C-23": [{"id": "T-840", "opened": "2026-08-22", "subject": "Charged twice", "status": "open"}],
+    "C-31": [{"id": "T-865", "opened": "2026-09-05", "subject": "Switch port 12 dead on arrival", "status": "open"}],
+    "C-48": []
+  },
+  "refund_policies": {
+    "US": "Full refund within 30 days of delivery. Duplicate charges are refunded in 3 business days.",
+    "EU": "Full refund within 14 days of delivery. Orders stuck in transit over 10 days may be refunded or reshipped at the customer's choice.",
+    "UK": "Full refund within 30 days of delivery. Faulty goods may be replaced or refunded within 6 months.",
+    "IN": "Refund within 10 days of delivery. Replacement preferred for hardware faults."
+  }
+}
