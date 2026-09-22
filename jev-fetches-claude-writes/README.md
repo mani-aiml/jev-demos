@@ -16,9 +16,9 @@ catalog.
 | `tools.py` | eight read-only lookups over `data.json`, each with a simulated 1.5 s round trip |
 | `agent_claude.py` | arm 1, the baseline: Claude picks a tool, waits for it, repeats |
 | `agent_jev_first.py` | arm 2, the pattern in the video: Jev picks the lookups, the harness runs them, Claude writes once |
-| `agent_jev.py` | the fallback arm: Claude keeps its tools and Jev runs likely lookups ahead of its decisions |
+| `agent_jev_helper.py` | the helpers both arms of the planner share: the candidate lookups from the ids in the state, the question Jev is asked, and Jev's cost bookkeeping |
 | `speed_gain.ipynb` | both arms on one task, then eight tasks three times each, with medians and charts |
-| `test_speculation.py` | offline tests of the planning logic, no API calls |
+| `test_planning.py` | offline tests of the planning logic, no API calls |
 | `tasks.json` | the eight support tasks |
 | `runs.csv` | my 48 runs from 21 Sep 2026, the numbers the video quotes |
 
@@ -60,7 +60,7 @@ Claude, one call: the task and the facts, no tools, no schemas, no history
   |
   |  if the reply starts with "MISSING: <fact>"
   v
-fallback to agent_jev.py: Claude with its tools back, Jev running likely lookups ahead
+fallback to agent_claude.py: the plain tool loop, so nothing is written from missing facts
 ```
 
 Jev decides which records to read. Claude decides what to say. The harness owns the memory,
@@ -119,7 +119,7 @@ The data in this demo is synthetic. The customers, orders, shipments, invoices, 
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
-pytest test_speculation.py
+pytest test_planning.py
 ```
 
 Put your TypeSafe and Anthropic keys in `.env`. The tests are free; they make no API calls.
@@ -131,7 +131,7 @@ costs about 35 cents on Claude and a fraction of a cent on Jev.
 | choice | where | why |
 |---|---|---|
 | `FETCH_AT = 0.7` | `agent_jev_first.py` | TypeSafe suggests acting above 0.9 and not below 0.5. It is lower here on purpose: a wrong yes costs one wasted read-only lookup, a wrong no costs a missing fact and a fallback. Raise it if your lookups are not free to waste. |
-| the question wording | `agent_jev.py`, `question()` | "Is this lookup the very next one?" hit about half the time, because parallel lookups split the probability. "Is this one of the lookups to run now, possibly alongside others?" hits 97 percent. Jev reads the question literally. |
+| the question wording | `agent_jev_helper.py`, `question()` | "Is this lookup the very next one?" hit about half the time, because parallel lookups split the probability. "Is this one of the lookups to run now, possibly alongside others?" hits 97 percent. Jev reads the question literally. |
 
 ## Read this before trusting the numbers
 
