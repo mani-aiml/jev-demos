@@ -1,111 +1,140 @@
 # Jev fetches, Claude writes
 
-**What is Jev? TypeSafe's System One model, paired with Claude.** The code behind the video.
+The code behind the video "What is Jev? TypeSafe's System One model, paired with Claude".
 
-Three of every four calls my support agent made to Claude Sonnet 5 were not writing anything.
-They were deciding which record to look up next. So the lookups were handed to Jev, a model
-that returns typed decisions with probabilities and never writes a word, and Claude was left
-with one call: the facts, and the answer. Same tasks, same answers, 1.7x faster and 5.8x
-cheaper on this catalog.
+A support agent answers questions from eight read-only lookups. Run the usual way, three of
+every four calls it makes to Claude Sonnet 5 are not writing anything. They are deciding
+which record to look up next. This demo hands that decision to Jev, a model that returns
+typed decisions with probabilities and never writes a word, and leaves Claude with one call:
+the facts, and the answer. Same tasks, same answers, 1.7x faster and 5.8x cheaper on this
+catalog.
 
-## Architecture
-
-Two arms run the same support agent over the same eight read-only lookups. `tools.py` gives
-every lookup a simulated 1.5 s round trip, so the cost of each Claude turn that only decides
-"what next" is visible in the clock as well as on the bill.
-
-### Arm 1, Claude alone (`agent_claude.py`)
-
-```
-                ┌────────────────────────────────────────────────────┐
-  task ───────► │  Claude Sonnet 5, with all eight tool schemas       │
-                │  reads the whole history, picks a tool, waits 1.5 s │◄──┐
-                └────────────────────────────┬───────────────────────┘   │
-                                             │ tool result appended       │
-                                             └───────────────────────────┘
-                                   ... 3 to 4 turns later: writes the answer
-```
-
-Every turn carries the schemas and the growing history (about 4,000 input tokens by the
-last call), and three of the four turns produce no text at all.
-
-### Arm 2, Jev fetches, Claude writes (`agent_jev_first.py`)
-
-```
-  task ──► ids in the task (C-17, O-1042, EU ...) ──► candidate lookups: every tool that
-                                                      takes one of those ids
-                       │
-                       ▼
-        ┌──────────────────────────────────────────────┐
-        │ Jev, ONE call: a Noul per candidate,           │
-        │ "is this one of the lookups to run now?"       │ ◄── round 2, 3 ...: a result can
-        └───────────────┬──────────────────────────────┘     expose new ids (an order id in
-                        │ probability >= FETCH_AT (0.7)      a customer record), so ask again
-                        ▼                                      with the new candidates
-        the harness runs the chosen lookups in parallel, keeps the facts,
-        stops when no candidate scores 0.7
-                        │
-                        ▼
-        ┌──────────────────────────────────────────────┐
-        │ Claude, ONE call: task + facts, no tools,     │ ──► the answer (about 500 input tokens)
-        │ no schemas, no history                        │
-        └───────────────┬──────────────────────────────┘
-                        │ "MISSING: <fact>"
-                        ▼
-        fallback: `agent_jev.py`, Claude with its tools back and Jev running likely
-        lookups ahead of its decisions (0 of 24 runs needed it on these tasks)
-```
-
-What Jev decides is *which* records to read. What Claude decides is *what to say*. The
-harness owns the memory (the facts list carries across turns) and the safety rule: only
-read-only lookups are ever fetched on a prediction. A predictor must never run a write.
-
-### What the notebook runs (`speed_gain.ipynb`)
-
-1. One task, arm 1: calls, lookups, tokens, seconds, dollars, and the answer.
-2. The same task, arm 2: the same five numbers, plus Jev's cost and whether it fell back.
-3. All eight tasks, both arms, three repeats: medians per task, a bar chart of seconds,
-   a stacked chart of cost, and the totals the video quotes.
+## Contents
 
 | file | what it is |
 |---|---|
 | `tools.py` | eight read-only lookups over `data.json`, each with a simulated 1.5 s round trip |
-| `agent_claude.py` | the baseline: Claude picks a tool, waits for it, repeats |
-| `agent_jev.py` | Jev as a branch predictor: likely lookups start while Claude is still deciding (the fallback arm) |
-| `agent_jev_first.py` | Jev fetches, Claude writes: the pattern the video is about |
-| `speed_gain.ipynb` | both arms on one task, then eight tasks three times each, medians and charts |
+| `agent_claude.py` | arm 1, the baseline: Claude picks a tool, waits for it, repeats |
+| `agent_jev_first.py` | arm 2, the pattern in the video: Jev picks the lookups, the harness runs them, Claude writes once |
+| `agent_jev.py` | the fallback arm: Claude keeps its tools and Jev runs likely lookups ahead of its decisions |
+| `speed_gain.ipynb` | both arms on one task, then eight tasks three times each, with medians and charts |
 | `test_speculation.py` | offline tests of the planning logic, no API calls |
-| `tasks.json`, `runs.csv` | the eight tasks, and my 48 runs from 21 Sep 2026 |
+| `tasks.json` | the eight support tasks |
+| `runs.csv` | my 48 runs from 21 Sep 2026, the numbers the video quotes |
+
+## Architecture
+
+### Arm 1: Claude alone
+
+```
+task -> Claude, with all eight tool schemas and the whole history
+          |  picks one tool
+          v
+        the tool runs (1.5 s)
+          |  result appended to the history
+          v
+        Claude again ... three or four turns, then it writes the answer
+```
+
+Every turn carries the schemas and a history that grows with each result, about 4,000 input
+tokens by the last call, and only the last turn produces text.
+
+### Arm 2: Jev fetches, Claude writes
+
+```
+task
+  |
+  v
+ids in the task (C-17, O-1042, EU) -> candidate lookups: every tool that takes one of them
+  |
+  v
+Jev, one call: one Noul per candidate, "is this one of the lookups to run now?"
+  |
+  v
+the harness runs every candidate scoring 0.7 or above, in parallel, and keeps the facts
+  |
+  |  a result can expose new ids (an order id inside a customer record)
+  |  so the new candidates go back to Jev: round two, round three, until nothing scores 0.7
+  v
+Claude, one call: the task and the facts, no tools, no schemas, no history
+  |
+  |  if the reply starts with "MISSING: <fact>"
+  v
+fallback to agent_jev.py: Claude with its tools back, Jev running likely lookups ahead
+```
+
+Jev decides which records to read. Claude decides what to say. The harness owns the memory,
+the facts list, and the safety rule: only read-only lookups are ever fetched on a
+prediction. A predictor must never run a write.
+
+### One task, step by step
+
+| step | arm 1: Claude alone | arm 2: Jev fetches, Claude writes |
+|---|---|---|
+| 1 | Claude reads the task and the schemas, asks for the customer record | Jev scores six candidate lookups in one call, in about 200 ms |
+| 2 | the lookup runs, 1.5 s | the harness runs the five that scored 0.7 or above, in parallel, 1.5 s |
+| 3 | Claude reads the history again, asks for the order | the order record exposes a shipment id; Jev scores the new candidates |
+| 4 | the lookup runs, 1.5 s | the harness runs the shipment lookup, 1.5 s |
+| 5 | Claude asks for the shipment, waits again | Claude gets seven facts in one call and writes the answer |
+| 6 | Claude writes the answer | done |
+
+## Results
+
+Eight tasks, both arms, three repeats each: 48 runs on claude-sonnet-5, 21 Sep 2026.
+
+| per task, medians | Claude alone | Jev fetches, Claude writes |
+|---|---|---|
+| seconds | 8.4 | 5.4 |
+| Claude calls | 3 | 1 |
+| input tokens | 4,214 | 350 |
+| lookups | 4 | 4.5 |
+| cost, USD | 0.0128 | 0.0022 |
+
+| totals for the eight tasks, mean of three repeats | Claude alone | Jev fetches, Claude writes |
+|---|---|---|
+| seconds | 71.0 | 42.3 |
+| cost, USD | 0.096 | 0.016 |
+| fallbacks to the tool loop | | 0 of 24 |
+
+| task | Claude alone, s | Jev first, s | speedup |
+|---|---|---|---|
+| account-review | 8.3 | 5.6 | 1.5x |
+| backorder | 7.2 | 5.2 | 1.4x |
+| dead-switch | 8.3 | 6.2 | 1.3x |
+| double-charge | 8.3 | 5.3 | 1.6x |
+| in-transit | 12.3 | 3.4 | 3.6x |
+| late-gateway | 11.7 | 5.9 | 2.0x |
+| policy-only | 4.3 | 3.2 | 1.4x |
+| unpaid | 8.9 | 7.4 | 1.2x |
+
+Jev's own bill for all 24 runs was about a quarter of a cent.
 
 ## Run it
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env      # add your TypeSafe and Anthropic keys
-pytest test_speculation.py   # free: no API calls
+cp .env.example .env
+pytest test_speculation.py
 ```
 
-Then open `speed_gain.ipynb`. The single-task cells cost a few cents; the full 48-run cell
-costs about $0.35 on Claude and a fraction of a cent on Jev.
+Put your TypeSafe and Anthropic keys in `.env`. The tests are free; they make no API calls.
+Then open `speed_gain.ipynb`. The single-task cells cost a few cents. The full 48-run cell
+costs about 35 cents on Claude and a fraction of a cent on Jev.
 
-**Two things in the code are worth knowing before you change them.**
+## Two design choices worth knowing
 
-- `FETCH_AT = 0.7` in `agent_jev_first.py`. TypeSafe's guidance is to act above 0.9 and not
-  below 0.5. It is pulled down here on purpose: a wrong yes costs one wasted read-only lookup,
-  a wrong no costs a missing fact and a fallback. Raise it if your lookups are not free to waste.
-- The question wording. "Is this lookup the very next one?" hit about half the time, because
-  parallel lookups split the probability. "Is this one of the lookups to run now, possibly
-  alongside others?" hits 97 percent. Jev reads the question literally.
+| choice | where | why |
+|---|---|---|
+| `FETCH_AT = 0.7` | `agent_jev_first.py` | TypeSafe suggests acting above 0.9 and not below 0.5. It is lower here on purpose: a wrong yes costs one wasted read-only lookup, a wrong no costs a missing fact and a fallback. Raise it if your lookups are not free to waste. |
+| the question wording | `agent_jev.py`, `question()` | "Is this lookup the very next one?" hit about half the time, because parallel lookups split the probability. "Is this one of the lookups to run now, possibly alongside others?" hits 97 percent. Jev reads the question literally. |
 
 ## Read this before trusting the numbers
 
-- Medians over 3 runs. Claude takes different paths from run to run.
-- Tool latency is simulated at 1.5 s; faster tools shrink the time gain and leave the cost gain.
-- The MISSING fallback catches under-fetching. It cannot catch a wrong answer written from
-  incomplete facts. You need evals on your own tasks for that.
-- Jev's speed and price figures are TypeSafe's own (blog and docs, retrieved 21 Sep 2026); the
-  model was a week old and in early access when this was recorded. The notebook outputs and
-  `runs.csv` are my numbers on my toy catalog. Yours will differ.
+- Medians over three runs. Claude takes different paths from run to run, and one slow response can flip a task.
+- Tool latency is simulated at 1.5 s. Faster tools shrink the time gain and leave the cost gain.
+- The MISSING fallback catches under-fetching. It cannot catch a wrong answer written from incomplete facts. You need evals on your own tasks for that.
+- Jev's speed and price figures are TypeSafe's own, from their blog and docs as retrieved on 21 Sep 2026. The model was a week old and in early access when this was recorded.
+- The eight tasks and the catalog are mine and small. Your numbers will differ.
 
-MIT licence (see the repository root). Video: The Agentic Enterprise on YouTube.
+MIT licence, see the repository root.
