@@ -1,12 +1,13 @@
 # jev-demos
 
-Demos with Jev, TypeSafe's System One model. One folder per demo, each self-contained: its own
+Demos with Jev, TypeSafe's System One model, and other System One models next to it. One folder per demo, each self-contained: its own
 README with the architecture, its own requirements and key names. The videos are on
 The Agentic Enterprise on YouTube.
 
 | folder | contents |
 |---|---|
 | [`jev-fetches-claude-writes/`](jev-fetches-claude-writes/) | two agents (Claude alone; Jev fetches, Claude writes), the lookup tools and data, offline tests, and the notebook that runs eight tasks both ways |
+| [`laya-vs-jev-judge/`](laya-vs-jev-judge/) | Jev and Laya grading the same 500 AI-written answers, zero-shot: the corpus, the reference judge's labels, the harness, the cascade maths and the recorded notebook |
 
 ```bash
 cd <folder>
