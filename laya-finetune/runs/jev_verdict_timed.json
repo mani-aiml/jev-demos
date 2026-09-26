@@ -1,0 +1,4047 @@
+{
+ "agreement": 0.842,
+ "agreement_sonnet": 0.87,
+ "p50_ms": 125.8,
+ "top_picks": [
+  [
+   "rework",
+   256
+  ],
+  [
+   "pass",
+   244
+  ]
+ ],
+ "risk_coverage": [
+  [
+   0.1,
+   1.0
+  ],
+  [
+   0.25,
+   0.992
+  ],
+  [
+   0.5,
+   0.948
+  ],
+  [
+   0.75,
+   0.92
+  ],
+  [
+   0.9,
+   0.8667
+  ],
+  [
+   1.0,
+   0.842
+  ]
+ ],
+ "rows": [
+  {
+   "id": 6,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 137.08,
+   "input_tokens": 481,
+   "output_tokens": 33
+  },
+  {
+   "id": 2,
+   "pick": "rework",
+   "conf": 0.19,
+   "ms": 95.74,
+   "input_tokens": 487,
+   "output_tokens": 34
+  },
+  {
+   "id": 3,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 102.66,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 1,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 131.75,
+   "input_tokens": 478,
+   "output_tokens": 34
+  },
+  {
+   "id": 9,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 110.45,
+   "input_tokens": 517,
+   "output_tokens": 33
+  },
+  {
+   "id": 12,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 103.42,
+   "input_tokens": 496,
+   "output_tokens": 33
+  },
+  {
+   "id": 10,
+   "pick": "rework",
+   "conf": 0.28,
+   "ms": 178.36,
+   "input_tokens": 483,
+   "output_tokens": 34
+  },
+  {
+   "id": 13,
+   "pick": "rework",
+   "conf": 0.93,
+   "ms": 92.31,
+   "input_tokens": 455,
+   "output_tokens": 34
+  },
+  {
+   "id": 18,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 99.19,
+   "input_tokens": 491,
+   "output_tokens": 33
+  },
+  {
+   "id": 14,
+   "pick": "rework",
+   "conf": 0.44,
+   "ms": 95.69,
+   "input_tokens": 479,
+   "output_tokens": 34
+  },
+  {
+   "id": 19,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 101.33,
+   "input_tokens": 516,
+   "output_tokens": 34
+  },
+  {
+   "id": 21,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 133.57,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 20,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 141.96,
+   "input_tokens": 460,
+   "output_tokens": 34
+  },
+  {
+   "id": 24,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 101.72,
+   "input_tokens": 502,
+   "output_tokens": 33
+  },
+  {
+   "id": 27,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 103.74,
+   "input_tokens": 483,
+   "output_tokens": 33
+  },
+  {
+   "id": 33,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 177.44,
+   "input_tokens": 485,
+   "output_tokens": 33
+  },
+  {
+   "id": 39,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 108.83,
+   "input_tokens": 487,
+   "output_tokens": 33
+  },
+  {
+   "id": 32,
+   "pick": "rework",
+   "conf": 0.92,
+   "ms": 141.52,
+   "input_tokens": 460,
+   "output_tokens": 34
+  },
+  {
+   "id": 40,
+   "pick": "rework",
+   "conf": 0.77,
+   "ms": 116.48,
+   "input_tokens": 480,
+   "output_tokens": 34
+  },
+  {
+   "id": 43,
+   "pick": "rework",
+   "conf": 0.89,
+   "ms": 161.75,
+   "input_tokens": 468,
+   "output_tokens": 34
+  },
+  {
+   "id": 44,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 111.78,
+   "input_tokens": 483,
+   "output_tokens": 34
+  },
+  {
+   "id": 45,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 135.35,
+   "input_tokens": 493,
+   "output_tokens": 33
+  },
+  {
+   "id": 50,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 141.1,
+   "input_tokens": 519,
+   "output_tokens": 33
+  },
+  {
+   "id": 54,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 132.5,
+   "input_tokens": 501,
+   "output_tokens": 33
+  },
+  {
+   "id": 48,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 130.04,
+   "input_tokens": 491,
+   "output_tokens": 33
+  },
+  {
+   "id": 55,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 134.95,
+   "input_tokens": 510,
+   "output_tokens": 34
+  },
+  {
+   "id": 51,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 120.86,
+   "input_tokens": 481,
+   "output_tokens": 33
+  },
+  {
+   "id": 57,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 161.82,
+   "input_tokens": 517,
+   "output_tokens": 33
+  },
+  {
+   "id": 60,
+   "pick": "pass",
+   "conf": 0.93,
+   "ms": 116.68,
+   "input_tokens": 515,
+   "output_tokens": 33
+  },
+  {
+   "id": 63,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 106.89,
+   "input_tokens": 536,
+   "output_tokens": 33
+  },
+  {
+   "id": 59,
+   "pick": "rework",
+   "conf": 0.54,
+   "ms": 134.92,
+   "input_tokens": 498,
+   "output_tokens": 34
+  },
+  {
+   "id": 66,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 143.35,
+   "input_tokens": 509,
+   "output_tokens": 33
+  },
+  {
+   "id": 69,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 103.57,
+   "input_tokens": 487,
+   "output_tokens": 33
+  },
+  {
+   "id": 72,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 115.71,
+   "input_tokens": 518,
+   "output_tokens": 33
+  },
+  {
+   "id": 78,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 127.47,
+   "input_tokens": 484,
+   "output_tokens": 33
+  },
+  {
+   "id": 75,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 177.39,
+   "input_tokens": 508,
+   "output_tokens": 33
+  },
+  {
+   "id": 81,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 95.98,
+   "input_tokens": 525,
+   "output_tokens": 33
+  },
+  {
+   "id": 73,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 100.58,
+   "input_tokens": 448,
+   "output_tokens": 34
+  },
+  {
+   "id": 82,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 116.51,
+   "input_tokens": 469,
+   "output_tokens": 34
+  },
+  {
+   "id": 85,
+   "pick": "rework",
+   "conf": 0.72,
+   "ms": 95.58,
+   "input_tokens": 507,
+   "output_tokens": 34
+  },
+  {
+   "id": 93,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 117.94,
+   "input_tokens": 462,
+   "output_tokens": 33
+  },
+  {
+   "id": 90,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 114.71,
+   "input_tokens": 495,
+   "output_tokens": 33
+  },
+  {
+   "id": 96,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 109.42,
+   "input_tokens": 485,
+   "output_tokens": 33
+  },
+  {
+   "id": 98,
+   "pick": "rework",
+   "conf": 0.72,
+   "ms": 103.51,
+   "input_tokens": 486,
+   "output_tokens": 34
+  },
+  {
+   "id": 99,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 191.37,
+   "input_tokens": 493,
+   "output_tokens": 33
+  },
+  {
+   "id": 102,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 108.91,
+   "input_tokens": 487,
+   "output_tokens": 33
+  },
+  {
+   "id": 104,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 136.05,
+   "input_tokens": 462,
+   "output_tokens": 34
+  },
+  {
+   "id": 111,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 109.49,
+   "input_tokens": 499,
+   "output_tokens": 33
+  },
+  {
+   "id": 109,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 170.93,
+   "input_tokens": 477,
+   "output_tokens": 34
+  },
+  {
+   "id": 103,
+   "pick": "rework",
+   "conf": 0.86,
+   "ms": 119.51,
+   "input_tokens": 493,
+   "output_tokens": 34
+  },
+  {
+   "id": 114,
+   "pick": "pass",
+   "conf": 0.9,
+   "ms": 115.97,
+   "input_tokens": 531,
+   "output_tokens": 33
+  },
+  {
+   "id": 117,
+   "pick": "pass",
+   "conf": 0.97,
+   "ms": 98.75,
+   "input_tokens": 522,
+   "output_tokens": 33
+  },
+  {
+   "id": 116,
+   "pick": "pass",
+   "conf": 0.91,
+   "ms": 191.44,
+   "input_tokens": 502,
+   "output_tokens": 33
+  },
+  {
+   "id": 119,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 109.85,
+   "input_tokens": 499,
+   "output_tokens": 34
+  },
+  {
+   "id": 123,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 96.61,
+   "input_tokens": 511,
+   "output_tokens": 33
+  },
+  {
+   "id": 120,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 112.95,
+   "input_tokens": 518,
+   "output_tokens": 33
+  },
+  {
+   "id": 124,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 202.96,
+   "input_tokens": 495,
+   "output_tokens": 34
+  },
+  {
+   "id": 125,
+   "pick": "rework",
+   "conf": 0.92,
+   "ms": 100.55,
+   "input_tokens": 488,
+   "output_tokens": 34
+  },
+  {
+   "id": 129,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 136.56,
+   "input_tokens": 525,
+   "output_tokens": 33
+  },
+  {
+   "id": 141,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 117.9,
+   "input_tokens": 519,
+   "output_tokens": 33
+  },
+  {
+   "id": 136,
+   "pick": "rework",
+   "conf": 0.6,
+   "ms": 169.24,
+   "input_tokens": 474,
+   "output_tokens": 34
+  },
+  {
+   "id": 144,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 97.52,
+   "input_tokens": 474,
+   "output_tokens": 33
+  },
+  {
+   "id": 147,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 112.36,
+   "input_tokens": 511,
+   "output_tokens": 33
+  },
+  {
+   "id": 155,
+   "pick": "rework",
+   "conf": 0.81,
+   "ms": 119.28,
+   "input_tokens": 473,
+   "output_tokens": 34
+  },
+  {
+   "id": 156,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 194.58,
+   "input_tokens": 499,
+   "output_tokens": 33
+  },
+  {
+   "id": 165,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 115.1,
+   "input_tokens": 484,
+   "output_tokens": 33
+  },
+  {
+   "id": 159,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 97.44,
+   "input_tokens": 493,
+   "output_tokens": 33
+  },
+  {
+   "id": 168,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 99.71,
+   "input_tokens": 502,
+   "output_tokens": 33
+  },
+  {
+   "id": 171,
+   "pick": "pass",
+   "conf": 0.92,
+   "ms": 97.43,
+   "input_tokens": 506,
+   "output_tokens": 33
+  },
+  {
+   "id": 173,
+   "pick": "rework",
+   "conf": 0.46,
+   "ms": 125.68,
+   "input_tokens": 454,
+   "output_tokens": 34
+  },
+  {
+   "id": 176,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 319.85,
+   "input_tokens": 483,
+   "output_tokens": 34
+  },
+  {
+   "id": 174,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 221.39,
+   "input_tokens": 504,
+   "output_tokens": 33
+  },
+  {
+   "id": 166,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 97.71,
+   "input_tokens": 496,
+   "output_tokens": 34
+  },
+  {
+   "id": 178,
+   "pick": "rework",
+   "conf": 0.43,
+   "ms": 96.57,
+   "input_tokens": 470,
+   "output_tokens": 34
+  },
+  {
+   "id": 179,
+   "pick": "rework",
+   "conf": 0.61,
+   "ms": 154.41,
+   "input_tokens": 512,
+   "output_tokens": 34
+  },
+  {
+   "id": 198,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 147.31,
+   "input_tokens": 501,
+   "output_tokens": 33
+  },
+  {
+   "id": 204,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 128.31,
+   "input_tokens": 507,
+   "output_tokens": 33
+  },
+  {
+   "id": 189,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 142.29,
+   "input_tokens": 500,
+   "output_tokens": 33
+  },
+  {
+   "id": 190,
+   "pick": "rework",
+   "conf": 0.92,
+   "ms": 116.15,
+   "input_tokens": 457,
+   "output_tokens": 34
+  },
+  {
+   "id": 205,
+   "pick": "rework",
+   "conf": 0.23,
+   "ms": 156.06,
+   "input_tokens": 526,
+   "output_tokens": 34
+  },
+  {
+   "id": 206,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 114.61,
+   "input_tokens": 448,
+   "output_tokens": 34
+  },
+  {
+   "id": 207,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 143.24,
+   "input_tokens": 502,
+   "output_tokens": 33
+  },
+  {
+   "id": 209,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 119.83,
+   "input_tokens": 489,
+   "output_tokens": 34
+  },
+  {
+   "id": 210,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 130.03,
+   "input_tokens": 502,
+   "output_tokens": 33
+  },
+  {
+   "id": 225,
+   "pick": "pass",
+   "conf": 0.95,
+   "ms": 102.2,
+   "input_tokens": 520,
+   "output_tokens": 33
+  },
+  {
+   "id": 212,
+   "pick": "rework",
+   "conf": 0.92,
+   "ms": 106.9,
+   "input_tokens": 506,
+   "output_tokens": 34
+  },
+  {
+   "id": 233,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 114.81,
+   "input_tokens": 449,
+   "output_tokens": 34
+  },
+  {
+   "id": 231,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 110.57,
+   "input_tokens": 507,
+   "output_tokens": 33
+  },
+  {
+   "id": 240,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 172.57,
+   "input_tokens": 498,
+   "output_tokens": 33
+  },
+  {
+   "id": 234,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 166.02,
+   "input_tokens": 489,
+   "output_tokens": 33
+  },
+  {
+   "id": 241,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 129.36,
+   "input_tokens": 546,
+   "output_tokens": 33
+  },
+  {
+   "id": 237,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 144.69,
+   "input_tokens": 493,
+   "output_tokens": 33
+  },
+  {
+   "id": 243,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 156.15,
+   "input_tokens": 539,
+   "output_tokens": 33
+  },
+  {
+   "id": 249,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 101.28,
+   "input_tokens": 483,
+   "output_tokens": 33
+  },
+  {
+   "id": 252,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 110.62,
+   "input_tokens": 505,
+   "output_tokens": 33
+  },
+  {
+   "id": 245,
+   "pick": "rework",
+   "conf": 0.9,
+   "ms": 156.04,
+   "input_tokens": 471,
+   "output_tokens": 34
+  },
+  {
+   "id": 256,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 118.8,
+   "input_tokens": 474,
+   "output_tokens": 34
+  },
+  {
+   "id": 258,
+   "pick": "pass",
+   "conf": 0.88,
+   "ms": 113.33,
+   "input_tokens": 514,
+   "output_tokens": 33
+  },
+  {
+   "id": 267,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 128.12,
+   "input_tokens": 499,
+   "output_tokens": 33
+  },
+  {
+   "id": 262,
+   "pick": "rework",
+   "conf": 0.95,
+   "ms": 164.2,
+   "input_tokens": 473,
+   "output_tokens": 34
+  },
+  {
+   "id": 270,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 111.87,
+   "input_tokens": 499,
+   "output_tokens": 33
+  },
+  {
+   "id": 272,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 106.94,
+   "input_tokens": 500,
+   "output_tokens": 34
+  },
+  {
+   "id": 285,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 120.73,
+   "input_tokens": 489,
+   "output_tokens": 33
+  },
+  {
+   "id": 288,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 186.92,
+   "input_tokens": 501,
+   "output_tokens": 33
+  },
+  {
+   "id": 283,
+   "pick": "pass",
+   "conf": 0.08,
+   "ms": 218.0,
+   "input_tokens": 500,
+   "output_tokens": 33
+  },
+  {
+   "id": 291,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 94.95,
+   "input_tokens": 506,
+   "output_tokens": 33
+  },
+  {
+   "id": 297,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 111.23,
+   "input_tokens": 473,
+   "output_tokens": 33
+  },
+  {
+   "id": 294,
+   "pick": "pass",
+   "conf": 0.97,
+   "ms": 129.64,
+   "input_tokens": 532,
+   "output_tokens": 33
+  },
+  {
+   "id": 304,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 207.65,
+   "input_tokens": 472,
+   "output_tokens": 34
+  },
+  {
+   "id": 303,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 104.19,
+   "input_tokens": 511,
+   "output_tokens": 33
+  },
+  {
+   "id": 306,
+   "pick": "pass",
+   "conf": 0.91,
+   "ms": 180.88,
+   "input_tokens": 498,
+   "output_tokens": 33
+  },
+  {
+   "id": 309,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 137.62,
+   "input_tokens": 491,
+   "output_tokens": 33
+  },
+  {
+   "id": 312,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 132.85,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 317,
+   "pick": "rework",
+   "conf": 0.87,
+   "ms": 102.67,
+   "input_tokens": 467,
+   "output_tokens": 34
+  },
+  {
+   "id": 318,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 149.66,
+   "input_tokens": 514,
+   "output_tokens": 33
+  },
+  {
+   "id": 321,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 97.56,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 300,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 110.51,
+   "input_tokens": 518,
+   "output_tokens": 33
+  },
+  {
+   "id": 323,
+   "pick": "rework",
+   "conf": 0.97,
+   "ms": 130.67,
+   "input_tokens": 460,
+   "output_tokens": 34
+  },
+  {
+   "id": 324,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 188.21,
+   "input_tokens": 520,
+   "output_tokens": 33
+  },
+  {
+   "id": 325,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 116.74,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 327,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 95.0,
+   "input_tokens": 496,
+   "output_tokens": 33
+  },
+  {
+   "id": 329,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 104.18,
+   "input_tokens": 455,
+   "output_tokens": 34
+  },
+  {
+   "id": 339,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 206.86,
+   "input_tokens": 509,
+   "output_tokens": 33
+  },
+  {
+   "id": 336,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 141.35,
+   "input_tokens": 492,
+   "output_tokens": 33
+  },
+  {
+   "id": 330,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 96.02,
+   "input_tokens": 493,
+   "output_tokens": 33
+  },
+  {
+   "id": 345,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 97.68,
+   "input_tokens": 506,
+   "output_tokens": 33
+  },
+  {
+   "id": 346,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 188.98,
+   "input_tokens": 461,
+   "output_tokens": 34
+  },
+  {
+   "id": 349,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 132.07,
+   "input_tokens": 464,
+   "output_tokens": 34
+  },
+  {
+   "id": 344,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 133.35,
+   "input_tokens": 467,
+   "output_tokens": 34
+  },
+  {
+   "id": 353,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 136.18,
+   "input_tokens": 481,
+   "output_tokens": 34
+  },
+  {
+   "id": 354,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 122.56,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 351,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 95.82,
+   "input_tokens": 485,
+   "output_tokens": 33
+  },
+  {
+   "id": 360,
+   "pick": "pass",
+   "conf": 0.96,
+   "ms": 96.21,
+   "input_tokens": 509,
+   "output_tokens": 33
+  },
+  {
+   "id": 356,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 101.07,
+   "input_tokens": 526,
+   "output_tokens": 34
+  },
+  {
+   "id": 358,
+   "pick": "rework",
+   "conf": 0.82,
+   "ms": 141.01,
+   "input_tokens": 442,
+   "output_tokens": 34
+  },
+  {
+   "id": 357,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 196.6,
+   "input_tokens": 511,
+   "output_tokens": 33
+  },
+  {
+   "id": 363,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 112.31,
+   "input_tokens": 520,
+   "output_tokens": 33
+  },
+  {
+   "id": 367,
+   "pick": "rework",
+   "conf": 0.79,
+   "ms": 128.19,
+   "input_tokens": 434,
+   "output_tokens": 34
+  },
+  {
+   "id": 369,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 177.96,
+   "input_tokens": 506,
+   "output_tokens": 33
+  },
+  {
+   "id": 376,
+   "pick": "rework",
+   "conf": 0.46,
+   "ms": 112.63,
+   "input_tokens": 496,
+   "output_tokens": 34
+  },
+  {
+   "id": 381,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 110.51,
+   "input_tokens": 499,
+   "output_tokens": 33
+  },
+  {
+   "id": 383,
+   "pick": "rework",
+   "conf": 0.34,
+   "ms": 144.97,
+   "input_tokens": 542,
+   "output_tokens": 34
+  },
+  {
+   "id": 385,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 157.94,
+   "input_tokens": 476,
+   "output_tokens": 34
+  },
+  {
+   "id": 384,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 116.23,
+   "input_tokens": 466,
+   "output_tokens": 33
+  },
+  {
+   "id": 393,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 134.39,
+   "input_tokens": 499,
+   "output_tokens": 33
+  },
+  {
+   "id": 391,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 106.25,
+   "input_tokens": 488,
+   "output_tokens": 33
+  },
+  {
+   "id": 396,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 165.36,
+   "input_tokens": 479,
+   "output_tokens": 33
+  },
+  {
+   "id": 389,
+   "pick": "pass",
+   "conf": 0.71,
+   "ms": 122.39,
+   "input_tokens": 473,
+   "output_tokens": 33
+  },
+  {
+   "id": 405,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 128.0,
+   "input_tokens": 490,
+   "output_tokens": 33
+  },
+  {
+   "id": 399,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 129.32,
+   "input_tokens": 493,
+   "output_tokens": 33
+  },
+  {
+   "id": 414,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 145.24,
+   "input_tokens": 516,
+   "output_tokens": 33
+  },
+  {
+   "id": 411,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 107.7,
+   "input_tokens": 504,
+   "output_tokens": 33
+  },
+  {
+   "id": 16,
+   "pick": "rework",
+   "conf": 0.67,
+   "ms": 135.03,
+   "input_tokens": 475,
+   "output_tokens": 34
+  },
+  {
+   "id": 15,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 114.49,
+   "input_tokens": 500,
+   "output_tokens": 33
+  },
+  {
+   "id": 11,
+   "pick": "pass",
+   "conf": 0.87,
+   "ms": 167.03,
+   "input_tokens": 497,
+   "output_tokens": 33
+  },
+  {
+   "id": 5,
+   "pick": "pass",
+   "conf": 0.7,
+   "ms": 110.65,
+   "input_tokens": 503,
+   "output_tokens": 33
+  },
+  {
+   "id": 22,
+   "pick": "rework",
+   "conf": 0.82,
+   "ms": 137.42,
+   "input_tokens": 492,
+   "output_tokens": 34
+  },
+  {
+   "id": 17,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 95.97,
+   "input_tokens": 477,
+   "output_tokens": 34
+  },
+  {
+   "id": 29,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 178.99,
+   "input_tokens": 441,
+   "output_tokens": 34
+  },
+  {
+   "id": 8,
+   "pick": "pass",
+   "conf": 0.93,
+   "ms": 143.95,
+   "input_tokens": 524,
+   "output_tokens": 33
+  },
+  {
+   "id": 4,
+   "pick": "rework",
+   "conf": 0.91,
+   "ms": 106.43,
+   "input_tokens": 500,
+   "output_tokens": 34
+  },
+  {
+   "id": 28,
+   "pick": "rework",
+   "conf": 0.94,
+   "ms": 124.93,
+   "input_tokens": 471,
+   "output_tokens": 34
+  },
+  {
+   "id": 7,
+   "pick": "rework",
+   "conf": 0.36,
+   "ms": 149.12,
+   "input_tokens": 526,
+   "output_tokens": 34
+  },
+  {
+   "id": 25,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 102.22,
+   "input_tokens": 475,
+   "output_tokens": 34
+  },
+  {
+   "id": 26,
+   "pick": "pass",
+   "conf": 0.97,
+   "ms": 126.54,
+   "input_tokens": 502,
+   "output_tokens": 33
+  },
+  {
+   "id": 30,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 101.86,
+   "input_tokens": 509,
+   "output_tokens": 33
+  },
+  {
+   "id": 37,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 193.4,
+   "input_tokens": 445,
+   "output_tokens": 34
+  },
+  {
+   "id": 23,
+   "pick": "pass",
+   "conf": 0.4,
+   "ms": 110.15,
+   "input_tokens": 520,
+   "output_tokens": 33
+  },
+  {
+   "id": 0,
+   "pick": "pass",
+   "conf": 0.94,
+   "ms": 220.14,
+   "input_tokens": 500,
+   "output_tokens": 33
+  },
+  {
+   "id": 35,
+   "pick": "pass",
+   "conf": 0.85,
+   "ms": 195.29,
+   "input_tokens": 458,
+   "output_tokens": 33
+  },
+  {
+   "id": 42,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 99.4,
+   "input_tokens": 500,
+   "output_tokens": 33
+  },
+  {
+   "id": 38,
+   "pick": "pass",
+   "conf": 0.17,
+   "ms": 123.31,
+   "input_tokens": 472,
+   "output_tokens": 33
+  },
+  {
+   "id": 31,
+   "pick": "rework",
+   "conf": 0.58,
+   "ms": 131.6,
+   "input_tokens": 487,
+   "output_tokens": 34
+  },
+  {
+   "id": 46,
+   "pick": "rework",
+   "conf": 0.43,
+   "ms": 167.48,
+   "input_tokens": 456,
+   "output_tokens": 34
+  },
+  {
+   "id": 41,
+   "pick": "rework",
+   "conf": 0.82,
+   "ms": 119.53,
+   "input_tokens": 512,
+   "output_tokens": 34
+  },
+  {
+   "id": 49,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 99.29,
+   "input_tokens": 441,
+   "output_tokens": 34
+  },
+  {
+   "id": 36,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 116.62,
+   "input_tokens": 509,
+   "output_tokens": 33
+  },
+  {
+   "id": 47,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 189.74,
+   "input_tokens": 467,
+   "output_tokens": 34
+  },
+  {
+   "id": 64,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 110.82,
+   "input_tokens": 462,
+   "output_tokens": 34
+  },
+  {
+   "id": 62,
+   "pick": "rework",
+   "conf": 0.76,
+   "ms": 105.38,
+   "input_tokens": 473,
+   "output_tokens": 34
+  },
+  {
+   "id": 52,
+   "pick": "pass",
+   "conf": 0.39,
+   "ms": 111.63,
+   "input_tokens": 503,
+   "output_tokens": 33
+  },
+  {
+   "id": 56,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 197.28,
+   "input_tokens": 464,
+   "output_tokens": 34
+  },
+  {
+   "id": 61,
+   "pick": "pass",
+   "conf": 0.44,
+   "ms": 97.98,
+   "input_tokens": 501,
+   "output_tokens": 33
+  },
+  {
+   "id": 71,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 99.22,
+   "input_tokens": 476,
+   "output_tokens": 34
+  },
+  {
+   "id": 53,
+   "pick": "pass",
+   "conf": 0.21,
+   "ms": 101.04,
+   "input_tokens": 489,
+   "output_tokens": 33
+  },
+  {
+   "id": 76,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 130.05,
+   "input_tokens": 482,
+   "output_tokens": 34
+  },
+  {
+   "id": 58,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 189.58,
+   "input_tokens": 511,
+   "output_tokens": 34
+  },
+  {
+   "id": 65,
+   "pick": "pass",
+   "conf": 0.35,
+   "ms": 106.0,
+   "input_tokens": 469,
+   "output_tokens": 33
+  },
+  {
+   "id": 74,
+   "pick": "rework",
+   "conf": 0.07,
+   "ms": 134.09,
+   "input_tokens": 510,
+   "output_tokens": 34
+  },
+  {
+   "id": 79,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 190.16,
+   "input_tokens": 478,
+   "output_tokens": 34
+  },
+  {
+   "id": 68,
+   "pick": "rework",
+   "conf": 0.47,
+   "ms": 130.86,
+   "input_tokens": 506,
+   "output_tokens": 34
+  },
+  {
+   "id": 77,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 114.36,
+   "input_tokens": 472,
+   "output_tokens": 34
+  },
+  {
+   "id": 83,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 154.85,
+   "input_tokens": 457,
+   "output_tokens": 34
+  },
+  {
+   "id": 91,
+   "pick": "rework",
+   "conf": 0.94,
+   "ms": 123.99,
+   "input_tokens": 440,
+   "output_tokens": 34
+  },
+  {
+   "id": 84,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 127.11,
+   "input_tokens": 491,
+   "output_tokens": 33
+  },
+  {
+   "id": 94,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 127.85,
+   "input_tokens": 455,
+   "output_tokens": 34
+  },
+  {
+   "id": 70,
+   "pick": "rework",
+   "conf": 0.22,
+   "ms": 172.09,
+   "input_tokens": 603,
+   "output_tokens": 34
+  },
+  {
+   "id": 67,
+   "pick": "rework",
+   "conf": 0.95,
+   "ms": 102.37,
+   "input_tokens": 491,
+   "output_tokens": 34
+  },
+  {
+   "id": 80,
+   "pick": "pass",
+   "conf": 0.15,
+   "ms": 123.19,
+   "input_tokens": 533,
+   "output_tokens": 33
+  },
+  {
+   "id": 95,
+   "pick": "pass",
+   "conf": 0.19,
+   "ms": 116.57,
+   "input_tokens": 523,
+   "output_tokens": 33
+  },
+  {
+   "id": 92,
+   "pick": "rework",
+   "conf": 0.88,
+   "ms": 100.65,
+   "input_tokens": 477,
+   "output_tokens": 34
+  },
+  {
+   "id": 87,
+   "pick": "pass",
+   "conf": 0.91,
+   "ms": 179.17,
+   "input_tokens": 524,
+   "output_tokens": 33
+  },
+  {
+   "id": 86,
+   "pick": "pass",
+   "conf": 0.71,
+   "ms": 109.42,
+   "input_tokens": 487,
+   "output_tokens": 33
+  },
+  {
+   "id": 88,
+   "pick": "pass",
+   "conf": 0.69,
+   "ms": 112.49,
+   "input_tokens": 499,
+   "output_tokens": 33
+  },
+  {
+   "id": 101,
+   "pick": "rework",
+   "conf": 0.23,
+   "ms": 120.28,
+   "input_tokens": 501,
+   "output_tokens": 34
+  },
+  {
+   "id": 106,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 183.62,
+   "input_tokens": 485,
+   "output_tokens": 34
+  },
+  {
+   "id": 105,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 164.67,
+   "input_tokens": 499,
+   "output_tokens": 33
+  },
+  {
+   "id": 97,
+   "pick": "rework",
+   "conf": 0.32,
+   "ms": 99.96,
+   "input_tokens": 498,
+   "output_tokens": 34
+  },
+  {
+   "id": 112,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 119.39,
+   "input_tokens": 452,
+   "output_tokens": 34
+  },
+  {
+   "id": 89,
+   "pick": "pass",
+   "conf": 0.76,
+   "ms": 138.01,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 107,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 98.26,
+   "input_tokens": 545,
+   "output_tokens": 34
+  },
+  {
+   "id": 100,
+   "pick": "rework",
+   "conf": 0.95,
+   "ms": 109.07,
+   "input_tokens": 485,
+   "output_tokens": 34
+  },
+  {
+   "id": 110,
+   "pick": "pass",
+   "conf": 0.23,
+   "ms": 111.6,
+   "input_tokens": 486,
+   "output_tokens": 33
+  },
+  {
+   "id": 108,
+   "pick": "pass",
+   "conf": 0.83,
+   "ms": 205.02,
+   "input_tokens": 507,
+   "output_tokens": 33
+  },
+  {
+   "id": 113,
+   "pick": "rework",
+   "conf": 0.86,
+   "ms": 127.49,
+   "input_tokens": 468,
+   "output_tokens": 34
+  },
+  {
+   "id": 127,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 94.62,
+   "input_tokens": 445,
+   "output_tokens": 34
+  },
+  {
+   "id": 118,
+   "pick": "rework",
+   "conf": 0.07,
+   "ms": 127.53,
+   "input_tokens": 522,
+   "output_tokens": 34
+  },
+  {
+   "id": 115,
+   "pick": "pass",
+   "conf": 0.44,
+   "ms": 174.78,
+   "input_tokens": 532,
+   "output_tokens": 33
+  },
+  {
+   "id": 126,
+   "pick": "pass",
+   "conf": 0.94,
+   "ms": 149.32,
+   "input_tokens": 486,
+   "output_tokens": 33
+  },
+  {
+   "id": 128,
+   "pick": "pass",
+   "conf": 0.29,
+   "ms": 168.22,
+   "input_tokens": 514,
+   "output_tokens": 33
+  },
+  {
+   "id": 121,
+   "pick": "rework",
+   "conf": 0.97,
+   "ms": 115.11,
+   "input_tokens": 485,
+   "output_tokens": 34
+  },
+  {
+   "id": 130,
+   "pick": "pass",
+   "conf": 0.42,
+   "ms": 203.1,
+   "input_tokens": 501,
+   "output_tokens": 33
+  },
+  {
+   "id": 131,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 95.35,
+   "input_tokens": 500,
+   "output_tokens": 34
+  },
+  {
+   "id": 122,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 115.81,
+   "input_tokens": 477,
+   "output_tokens": 34
+  },
+  {
+   "id": 135,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 201.93,
+   "input_tokens": 471,
+   "output_tokens": 33
+  },
+  {
+   "id": 138,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 109.31,
+   "input_tokens": 482,
+   "output_tokens": 33
+  },
+  {
+   "id": 132,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 136.04,
+   "input_tokens": 498,
+   "output_tokens": 33
+  },
+  {
+   "id": 143,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 107.63,
+   "input_tokens": 488,
+   "output_tokens": 34
+  },
+  {
+   "id": 137,
+   "pick": "rework",
+   "conf": 0.91,
+   "ms": 171.32,
+   "input_tokens": 480,
+   "output_tokens": 34
+  },
+  {
+   "id": 134,
+   "pick": "pass",
+   "conf": 0.84,
+   "ms": 125.1,
+   "input_tokens": 478,
+   "output_tokens": 33
+  },
+  {
+   "id": 142,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 121.29,
+   "input_tokens": 543,
+   "output_tokens": 34
+  },
+  {
+   "id": 146,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 123.05,
+   "input_tokens": 481,
+   "output_tokens": 34
+  },
+  {
+   "id": 145,
+   "pick": "rework",
+   "conf": 0.9,
+   "ms": 158.15,
+   "input_tokens": 503,
+   "output_tokens": 34
+  },
+  {
+   "id": 140,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 108.68,
+   "input_tokens": 496,
+   "output_tokens": 33
+  },
+  {
+   "id": 149,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 99.65,
+   "input_tokens": 471,
+   "output_tokens": 34
+  },
+  {
+   "id": 150,
+   "pick": "pass",
+   "conf": 0.77,
+   "ms": 114.49,
+   "input_tokens": 505,
+   "output_tokens": 33
+  },
+  {
+   "id": 152,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 198.6,
+   "input_tokens": 467,
+   "output_tokens": 34
+  },
+  {
+   "id": 139,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 119.63,
+   "input_tokens": 462,
+   "output_tokens": 34
+  },
+  {
+   "id": 154,
+   "pick": "rework",
+   "conf": 0.8,
+   "ms": 165.5,
+   "input_tokens": 507,
+   "output_tokens": 34
+  },
+  {
+   "id": 133,
+   "pick": "pass",
+   "conf": 0.53,
+   "ms": 131.7,
+   "input_tokens": 503,
+   "output_tokens": 33
+  },
+  {
+   "id": 151,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 107.92,
+   "input_tokens": 452,
+   "output_tokens": 34
+  },
+  {
+   "id": 148,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 117.46,
+   "input_tokens": 469,
+   "output_tokens": 34
+  },
+  {
+   "id": 158,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 115.48,
+   "input_tokens": 469,
+   "output_tokens": 34
+  },
+  {
+   "id": 162,
+   "pick": "pass",
+   "conf": 0.96,
+   "ms": 181.22,
+   "input_tokens": 525,
+   "output_tokens": 33
+  },
+  {
+   "id": 157,
+   "pick": "pass",
+   "conf": 0.94,
+   "ms": 141.03,
+   "input_tokens": 503,
+   "output_tokens": 33
+  },
+  {
+   "id": 164,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 111.73,
+   "input_tokens": 447,
+   "output_tokens": 34
+  },
+  {
+   "id": 161,
+   "pick": "rework",
+   "conf": 0.58,
+   "ms": 104.0,
+   "input_tokens": 454,
+   "output_tokens": 34
+  },
+  {
+   "id": 153,
+   "pick": "pass",
+   "conf": 0.92,
+   "ms": 182.49,
+   "input_tokens": 505,
+   "output_tokens": 33
+  },
+  {
+   "id": 160,
+   "pick": "rework",
+   "conf": 0.19,
+   "ms": 183.81,
+   "input_tokens": 510,
+   "output_tokens": 34
+  },
+  {
+   "id": 169,
+   "pick": "rework",
+   "conf": 0.92,
+   "ms": 107.05,
+   "input_tokens": 481,
+   "output_tokens": 34
+  },
+  {
+   "id": 163,
+   "pick": "rework",
+   "conf": 0.97,
+   "ms": 95.96,
+   "input_tokens": 482,
+   "output_tokens": 34
+  },
+  {
+   "id": 175,
+   "pick": "pass",
+   "conf": 0.95,
+   "ms": 131.56,
+   "input_tokens": 517,
+   "output_tokens": 33
+  },
+  {
+   "id": 167,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 109.35,
+   "input_tokens": 454,
+   "output_tokens": 34
+  },
+  {
+   "id": 170,
+   "pick": "rework",
+   "conf": 0.39,
+   "ms": 182.66,
+   "input_tokens": 472,
+   "output_tokens": 34
+  },
+  {
+   "id": 180,
+   "pick": "pass",
+   "conf": 0.92,
+   "ms": 121.09,
+   "input_tokens": 510,
+   "output_tokens": 33
+  },
+  {
+   "id": 177,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 106.17,
+   "input_tokens": 519,
+   "output_tokens": 33
+  },
+  {
+   "id": 182,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 107.99,
+   "input_tokens": 472,
+   "output_tokens": 34
+  },
+  {
+   "id": 172,
+   "pick": "pass",
+   "conf": 0.15,
+   "ms": 109.05,
+   "input_tokens": 480,
+   "output_tokens": 33
+  },
+  {
+   "id": 188,
+   "pick": "rework",
+   "conf": 0.86,
+   "ms": 110.77,
+   "input_tokens": 451,
+   "output_tokens": 34
+  },
+  {
+   "id": 183,
+   "pick": "pass",
+   "conf": 0.87,
+   "ms": 115.53,
+   "input_tokens": 534,
+   "output_tokens": 33
+  },
+  {
+   "id": 181,
+   "pick": "pass",
+   "conf": 0.88,
+   "ms": 184.9,
+   "input_tokens": 542,
+   "output_tokens": 33
+  },
+  {
+   "id": 184,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 146.62,
+   "input_tokens": 503,
+   "output_tokens": 33
+  },
+  {
+   "id": 187,
+   "pick": "rework",
+   "conf": 0.83,
+   "ms": 131.46,
+   "input_tokens": 499,
+   "output_tokens": 34
+  },
+  {
+   "id": 191,
+   "pick": "pass",
+   "conf": 0.96,
+   "ms": 99.32,
+   "input_tokens": 468,
+   "output_tokens": 33
+  },
+  {
+   "id": 186,
+   "pick": "pass",
+   "conf": 0.97,
+   "ms": 146.73,
+   "input_tokens": 505,
+   "output_tokens": 33
+  },
+  {
+   "id": 192,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 119.12,
+   "input_tokens": 525,
+   "output_tokens": 33
+  },
+  {
+   "id": 194,
+   "pick": "pass",
+   "conf": 0.96,
+   "ms": 111.77,
+   "input_tokens": 516,
+   "output_tokens": 33
+  },
+  {
+   "id": 185,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 112.31,
+   "input_tokens": 473,
+   "output_tokens": 34
+  },
+  {
+   "id": 197,
+   "pick": "rework",
+   "conf": 0.88,
+   "ms": 181.59,
+   "input_tokens": 479,
+   "output_tokens": 34
+  },
+  {
+   "id": 195,
+   "pick": "pass",
+   "conf": 0.96,
+   "ms": 147.26,
+   "input_tokens": 496,
+   "output_tokens": 33
+  },
+  {
+   "id": 201,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 132.96,
+   "input_tokens": 500,
+   "output_tokens": 33
+  },
+  {
+   "id": 214,
+   "pick": "rework",
+   "conf": 0.39,
+   "ms": 138.41,
+   "input_tokens": 471,
+   "output_tokens": 34
+  },
+  {
+   "id": 200,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 292.71,
+   "input_tokens": 458,
+   "output_tokens": 34
+  },
+  {
+   "id": 193,
+   "pick": "rework",
+   "conf": 0.78,
+   "ms": 222.62,
+   "input_tokens": 472,
+   "output_tokens": 34
+  },
+  {
+   "id": 196,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 119.09,
+   "input_tokens": 542,
+   "output_tokens": 33
+  },
+  {
+   "id": 208,
+   "pick": "rework",
+   "conf": 0.81,
+   "ms": 120.67,
+   "input_tokens": 511,
+   "output_tokens": 34
+  },
+  {
+   "id": 199,
+   "pick": "rework",
+   "conf": 0.95,
+   "ms": 139.15,
+   "input_tokens": 523,
+   "output_tokens": 34
+  },
+  {
+   "id": 203,
+   "pick": "rework",
+   "conf": 0.29,
+   "ms": 131.25,
+   "input_tokens": 489,
+   "output_tokens": 34
+  },
+  {
+   "id": 213,
+   "pick": "pass",
+   "conf": 0.91,
+   "ms": 128.73,
+   "input_tokens": 506,
+   "output_tokens": 33
+  },
+  {
+   "id": 216,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 112.28,
+   "input_tokens": 527,
+   "output_tokens": 33
+  },
+  {
+   "id": 202,
+   "pick": "rework",
+   "conf": 0.83,
+   "ms": 170.38,
+   "input_tokens": 493,
+   "output_tokens": 34
+  },
+  {
+   "id": 215,
+   "pick": "rework",
+   "conf": 0.08,
+   "ms": 113.57,
+   "input_tokens": 491,
+   "output_tokens": 34
+  },
+  {
+   "id": 220,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 127.95,
+   "input_tokens": 463,
+   "output_tokens": 34
+  },
+  {
+   "id": 211,
+   "pick": "pass",
+   "conf": 0.86,
+   "ms": 94.7,
+   "input_tokens": 527,
+   "output_tokens": 33
+  },
+  {
+   "id": 222,
+   "pick": "pass",
+   "conf": 0.15,
+   "ms": 112.3,
+   "input_tokens": 510,
+   "output_tokens": 33
+  },
+  {
+   "id": 219,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 117.25,
+   "input_tokens": 518,
+   "output_tokens": 33
+  },
+  {
+   "id": 217,
+   "pick": "pass",
+   "conf": 0.48,
+   "ms": 201.1,
+   "input_tokens": 473,
+   "output_tokens": 33
+  },
+  {
+   "id": 221,
+   "pick": "pass",
+   "conf": 0.63,
+   "ms": 114.88,
+   "input_tokens": 511,
+   "output_tokens": 33
+  },
+  {
+   "id": 224,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 152.03,
+   "input_tokens": 475,
+   "output_tokens": 34
+  },
+  {
+   "id": 223,
+   "pick": "rework",
+   "conf": 0.72,
+   "ms": 105.18,
+   "input_tokens": 474,
+   "output_tokens": 34
+  },
+  {
+   "id": 229,
+   "pick": "rework",
+   "conf": 0.45,
+   "ms": 152.35,
+   "input_tokens": 486,
+   "output_tokens": 34
+  },
+  {
+   "id": 227,
+   "pick": "pass",
+   "conf": 0.74,
+   "ms": 94.81,
+   "input_tokens": 454,
+   "output_tokens": 33
+  },
+  {
+   "id": 228,
+   "pick": "pass",
+   "conf": 0.97,
+   "ms": 180.58,
+   "input_tokens": 517,
+   "output_tokens": 33
+  },
+  {
+   "id": 230,
+   "pick": "rework",
+   "conf": 0.86,
+   "ms": 114.54,
+   "input_tokens": 491,
+   "output_tokens": 34
+  },
+  {
+   "id": 236,
+   "pick": "rework",
+   "conf": 0.69,
+   "ms": 132.21,
+   "input_tokens": 471,
+   "output_tokens": 34
+  },
+  {
+   "id": 232,
+   "pick": "rework",
+   "conf": 0.72,
+   "ms": 143.62,
+   "input_tokens": 497,
+   "output_tokens": 34
+  },
+  {
+   "id": 218,
+   "pick": "rework",
+   "conf": 0.21,
+   "ms": 116.86,
+   "input_tokens": 461,
+   "output_tokens": 34
+  },
+  {
+   "id": 226,
+   "pick": "pass",
+   "conf": 0.64,
+   "ms": 111.17,
+   "input_tokens": 518,
+   "output_tokens": 33
+  },
+  {
+   "id": 244,
+   "pick": "pass",
+   "conf": 0.73,
+   "ms": 225.59,
+   "input_tokens": 477,
+   "output_tokens": 33
+  },
+  {
+   "id": 235,
+   "pick": "rework",
+   "conf": 0.95,
+   "ms": 102.36,
+   "input_tokens": 455,
+   "output_tokens": 34
+  },
+  {
+   "id": 246,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 177.58,
+   "input_tokens": 509,
+   "output_tokens": 33
+  },
+  {
+   "id": 242,
+   "pick": "pass",
+   "conf": 0.72,
+   "ms": 172.76,
+   "input_tokens": 507,
+   "output_tokens": 33
+  },
+  {
+   "id": 238,
+   "pick": "pass",
+   "conf": 0.96,
+   "ms": 108.99,
+   "input_tokens": 492,
+   "output_tokens": 33
+  },
+  {
+   "id": 248,
+   "pick": "pass",
+   "conf": 0.6,
+   "ms": 127.0,
+   "input_tokens": 507,
+   "output_tokens": 33
+  },
+  {
+   "id": 247,
+   "pick": "pass",
+   "conf": 0.59,
+   "ms": 127.47,
+   "input_tokens": 490,
+   "output_tokens": 33
+  },
+  {
+   "id": 250,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 163.56,
+   "input_tokens": 490,
+   "output_tokens": 34
+  },
+  {
+   "id": 253,
+   "pick": "rework",
+   "conf": 0.88,
+   "ms": 132.35,
+   "input_tokens": 462,
+   "output_tokens": 34
+  },
+  {
+   "id": 255,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 198.98,
+   "input_tokens": 495,
+   "output_tokens": 33
+  },
+  {
+   "id": 239,
+   "pick": "rework",
+   "conf": 0.26,
+   "ms": 189.41,
+   "input_tokens": 513,
+   "output_tokens": 34
+  },
+  {
+   "id": 259,
+   "pick": "rework",
+   "conf": 0.84,
+   "ms": 136.06,
+   "input_tokens": 458,
+   "output_tokens": 34
+  },
+  {
+   "id": 254,
+   "pick": "pass",
+   "conf": 0.85,
+   "ms": 96.52,
+   "input_tokens": 478,
+   "output_tokens": 33
+  },
+  {
+   "id": 257,
+   "pick": "pass",
+   "conf": 0.02,
+   "ms": 100.57,
+   "input_tokens": 510,
+   "output_tokens": 33
+  },
+  {
+   "id": 265,
+   "pick": "rework",
+   "conf": 0.37,
+   "ms": 190.89,
+   "input_tokens": 491,
+   "output_tokens": 34
+  },
+  {
+   "id": 251,
+   "pick": "rework",
+   "conf": 0.84,
+   "ms": 102.97,
+   "input_tokens": 488,
+   "output_tokens": 34
+  },
+  {
+   "id": 260,
+   "pick": "rework",
+   "conf": 0.61,
+   "ms": 110.12,
+   "input_tokens": 462,
+   "output_tokens": 34
+  },
+  {
+   "id": 264,
+   "pick": "pass",
+   "conf": 0.94,
+   "ms": 334.04,
+   "input_tokens": 501,
+   "output_tokens": 33
+  },
+  {
+   "id": 266,
+   "pick": "pass",
+   "conf": 0.03,
+   "ms": 120.03,
+   "input_tokens": 535,
+   "output_tokens": 33
+  },
+  {
+   "id": 273,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 192.4,
+   "input_tokens": 515,
+   "output_tokens": 33
+  },
+  {
+   "id": 261,
+   "pick": "rework",
+   "conf": 0.47,
+   "ms": 190.47,
+   "input_tokens": 548,
+   "output_tokens": 34
+  },
+  {
+   "id": 271,
+   "pick": "pass",
+   "conf": 0.31,
+   "ms": 149.79,
+   "input_tokens": 487,
+   "output_tokens": 33
+  },
+  {
+   "id": 269,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 137.67,
+   "input_tokens": 460,
+   "output_tokens": 34
+  },
+  {
+   "id": 274,
+   "pick": "rework",
+   "conf": 0.22,
+   "ms": 101.47,
+   "input_tokens": 496,
+   "output_tokens": 34
+  },
+  {
+   "id": 268,
+   "pick": "rework",
+   "conf": 0.18,
+   "ms": 134.08,
+   "input_tokens": 509,
+   "output_tokens": 34
+  },
+  {
+   "id": 277,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 122.21,
+   "input_tokens": 477,
+   "output_tokens": 34
+  },
+  {
+   "id": 275,
+   "pick": "pass",
+   "conf": 0.88,
+   "ms": 139.92,
+   "input_tokens": 498,
+   "output_tokens": 33
+  },
+  {
+   "id": 276,
+   "pick": "pass",
+   "conf": 0.95,
+   "ms": 108.53,
+   "input_tokens": 480,
+   "output_tokens": 33
+  },
+  {
+   "id": 282,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 153.74,
+   "input_tokens": 504,
+   "output_tokens": 33
+  },
+  {
+   "id": 279,
+   "pick": "pass",
+   "conf": 0.97,
+   "ms": 110.52,
+   "input_tokens": 522,
+   "output_tokens": 33
+  },
+  {
+   "id": 263,
+   "pick": "rework",
+   "conf": 0.29,
+   "ms": 113.19,
+   "input_tokens": 559,
+   "output_tokens": 34
+  },
+  {
+   "id": 287,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 162.91,
+   "input_tokens": 451,
+   "output_tokens": 34
+  },
+  {
+   "id": 278,
+   "pick": "rework",
+   "conf": 0.95,
+   "ms": 137.64,
+   "input_tokens": 471,
+   "output_tokens": 34
+  },
+  {
+   "id": 284,
+   "pick": "rework",
+   "conf": 0.28,
+   "ms": 112.64,
+   "input_tokens": 487,
+   "output_tokens": 34
+  },
+  {
+   "id": 280,
+   "pick": "rework",
+   "conf": 0.97,
+   "ms": 125.47,
+   "input_tokens": 476,
+   "output_tokens": 34
+  },
+  {
+   "id": 296,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 119.38,
+   "input_tokens": 458,
+   "output_tokens": 34
+  },
+  {
+   "id": 281,
+   "pick": "rework",
+   "conf": 0.91,
+   "ms": 173.41,
+   "input_tokens": 486,
+   "output_tokens": 34
+  },
+  {
+   "id": 293,
+   "pick": "pass",
+   "conf": 0.02,
+   "ms": 108.77,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 286,
+   "pick": "rework",
+   "conf": 0.39,
+   "ms": 137.58,
+   "input_tokens": 454,
+   "output_tokens": 34
+  },
+  {
+   "id": 292,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 150.96,
+   "input_tokens": 455,
+   "output_tokens": 34
+  },
+  {
+   "id": 298,
+   "pick": "pass",
+   "conf": 0.58,
+   "ms": 260.39,
+   "input_tokens": 492,
+   "output_tokens": 33
+  },
+  {
+   "id": 295,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 130.47,
+   "input_tokens": 481,
+   "output_tokens": 34
+  },
+  {
+   "id": 290,
+   "pick": "rework",
+   "conf": 0.85,
+   "ms": 157.91,
+   "input_tokens": 449,
+   "output_tokens": 34
+  },
+  {
+   "id": 289,
+   "pick": "rework",
+   "conf": 0.93,
+   "ms": 143.18,
+   "input_tokens": 485,
+   "output_tokens": 34
+  },
+  {
+   "id": 299,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 97.01,
+   "input_tokens": 495,
+   "output_tokens": 34
+  },
+  {
+   "id": 307,
+   "pick": "rework",
+   "conf": 0.43,
+   "ms": 107.59,
+   "input_tokens": 482,
+   "output_tokens": 34
+  },
+  {
+   "id": 305,
+   "pick": "pass",
+   "conf": 0.52,
+   "ms": 140.93,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 308,
+   "pick": "pass",
+   "conf": 0.35,
+   "ms": 131.03,
+   "input_tokens": 483,
+   "output_tokens": 33
+  },
+  {
+   "id": 310,
+   "pick": "rework",
+   "conf": 0.96,
+   "ms": 139.28,
+   "input_tokens": 464,
+   "output_tokens": 34
+  },
+  {
+   "id": 311,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 164.05,
+   "input_tokens": 476,
+   "output_tokens": 34
+  },
+  {
+   "id": 320,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 116.33,
+   "input_tokens": 458,
+   "output_tokens": 34
+  },
+  {
+   "id": 301,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 110.88,
+   "input_tokens": 477,
+   "output_tokens": 34
+  },
+  {
+   "id": 316,
+   "pick": "pass",
+   "conf": 0.67,
+   "ms": 139.02,
+   "input_tokens": 493,
+   "output_tokens": 33
+  },
+  {
+   "id": 326,
+   "pick": "rework",
+   "conf": 0.5,
+   "ms": 208.93,
+   "input_tokens": 491,
+   "output_tokens": 34
+  },
+  {
+   "id": 302,
+   "pick": "rework",
+   "conf": 0.89,
+   "ms": 172.17,
+   "input_tokens": 464,
+   "output_tokens": 34
+  },
+  {
+   "id": 315,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 170.78,
+   "input_tokens": 493,
+   "output_tokens": 33
+  },
+  {
+   "id": 319,
+   "pick": "rework",
+   "conf": 0.65,
+   "ms": 125.99,
+   "input_tokens": 518,
+   "output_tokens": 34
+  },
+  {
+   "id": 314,
+   "pick": "rework",
+   "conf": 0.66,
+   "ms": 226.49,
+   "input_tokens": 503,
+   "output_tokens": 34
+  },
+  {
+   "id": 328,
+   "pick": "rework",
+   "conf": 0.45,
+   "ms": 105.55,
+   "input_tokens": 482,
+   "output_tokens": 34
+  },
+  {
+   "id": 333,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 136.56,
+   "input_tokens": 509,
+   "output_tokens": 33
+  },
+  {
+   "id": 313,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 129.59,
+   "input_tokens": 495,
+   "output_tokens": 34
+  },
+  {
+   "id": 331,
+   "pick": "rework",
+   "conf": 0.42,
+   "ms": 150.72,
+   "input_tokens": 548,
+   "output_tokens": 34
+  },
+  {
+   "id": 337,
+   "pick": "rework",
+   "conf": 0.14,
+   "ms": 136.04,
+   "input_tokens": 465,
+   "output_tokens": 34
+  },
+  {
+   "id": 335,
+   "pick": "rework",
+   "conf": 0.89,
+   "ms": 117.47,
+   "input_tokens": 494,
+   "output_tokens": 34
+  },
+  {
+   "id": 322,
+   "pick": "rework",
+   "conf": 0.22,
+   "ms": 93.82,
+   "input_tokens": 463,
+   "output_tokens": 34
+  },
+  {
+   "id": 341,
+   "pick": "pass",
+   "conf": 0.64,
+   "ms": 176.39,
+   "input_tokens": 455,
+   "output_tokens": 33
+  },
+  {
+   "id": 340,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 91.92,
+   "input_tokens": 453,
+   "output_tokens": 34
+  },
+  {
+   "id": 332,
+   "pick": "pass",
+   "conf": 0.75,
+   "ms": 139.45,
+   "input_tokens": 516,
+   "output_tokens": 33
+  },
+  {
+   "id": 343,
+   "pick": "rework",
+   "conf": 0.12,
+   "ms": 115.79,
+   "input_tokens": 490,
+   "output_tokens": 34
+  },
+  {
+   "id": 334,
+   "pick": "rework",
+   "conf": 0.07,
+   "ms": 179.12,
+   "input_tokens": 488,
+   "output_tokens": 34
+  },
+  {
+   "id": 347,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 124.22,
+   "input_tokens": 468,
+   "output_tokens": 34
+  },
+  {
+   "id": 338,
+   "pick": "rework",
+   "conf": 0.93,
+   "ms": 116.39,
+   "input_tokens": 493,
+   "output_tokens": 34
+  },
+  {
+   "id": 359,
+   "pick": "rework",
+   "conf": 0.77,
+   "ms": 139.88,
+   "input_tokens": 498,
+   "output_tokens": 34
+  },
+  {
+   "id": 342,
+   "pick": "pass",
+   "conf": 0.95,
+   "ms": 143.59,
+   "input_tokens": 582,
+   "output_tokens": 33
+  },
+  {
+   "id": 352,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 138.33,
+   "input_tokens": 493,
+   "output_tokens": 34
+  },
+  {
+   "id": 361,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 163.58,
+   "input_tokens": 469,
+   "output_tokens": 34
+  },
+  {
+   "id": 350,
+   "pick": "pass",
+   "conf": 0.26,
+   "ms": 104.0,
+   "input_tokens": 540,
+   "output_tokens": 33
+  },
+  {
+   "id": 355,
+   "pick": "rework",
+   "conf": 0.01,
+   "ms": 117.5,
+   "input_tokens": 466,
+   "output_tokens": 34
+  },
+  {
+   "id": 348,
+   "pick": "pass",
+   "conf": 0.87,
+   "ms": 100.09,
+   "input_tokens": 497,
+   "output_tokens": 33
+  },
+  {
+   "id": 366,
+   "pick": "pass",
+   "conf": 0.96,
+   "ms": 118.94,
+   "input_tokens": 486,
+   "output_tokens": 33
+  },
+  {
+   "id": 362,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 98.7,
+   "input_tokens": 481,
+   "output_tokens": 34
+  },
+  {
+   "id": 372,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 91.95,
+   "input_tokens": 498,
+   "output_tokens": 33
+  },
+  {
+   "id": 368,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 114.88,
+   "input_tokens": 458,
+   "output_tokens": 34
+  },
+  {
+   "id": 365,
+   "pick": "rework",
+   "conf": 0.59,
+   "ms": 255.94,
+   "input_tokens": 459,
+   "output_tokens": 34
+  },
+  {
+   "id": 370,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 268.66,
+   "input_tokens": 476,
+   "output_tokens": 34
+  },
+  {
+   "id": 373,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 111.25,
+   "input_tokens": 455,
+   "output_tokens": 34
+  },
+  {
+   "id": 377,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 102.67,
+   "input_tokens": 456,
+   "output_tokens": 34
+  },
+  {
+   "id": 375,
+   "pick": "pass",
+   "conf": 0.92,
+   "ms": 117.52,
+   "input_tokens": 501,
+   "output_tokens": 33
+  },
+  {
+   "id": 378,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 321.59,
+   "input_tokens": 518,
+   "output_tokens": 33
+  },
+  {
+   "id": 371,
+   "pick": "pass",
+   "conf": 0.59,
+   "ms": 112.03,
+   "input_tokens": 501,
+   "output_tokens": 33
+  },
+  {
+   "id": 390,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 134.3,
+   "input_tokens": 481,
+   "output_tokens": 33
+  },
+  {
+   "id": 387,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 148.09,
+   "input_tokens": 491,
+   "output_tokens": 33
+  },
+  {
+   "id": 379,
+   "pick": "pass",
+   "conf": 0.55,
+   "ms": 112.27,
+   "input_tokens": 474,
+   "output_tokens": 33
+  },
+  {
+   "id": 374,
+   "pick": "rework",
+   "conf": 0.97,
+   "ms": 148.86,
+   "input_tokens": 478,
+   "output_tokens": 34
+  },
+  {
+   "id": 380,
+   "pick": "rework",
+   "conf": 0.04,
+   "ms": 93.06,
+   "input_tokens": 454,
+   "output_tokens": 34
+  },
+  {
+   "id": 392,
+   "pick": "rework",
+   "conf": 0.84,
+   "ms": 202.68,
+   "input_tokens": 490,
+   "output_tokens": 34
+  },
+  {
+   "id": 382,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 110.33,
+   "input_tokens": 483,
+   "output_tokens": 34
+  },
+  {
+   "id": 364,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 126.55,
+   "input_tokens": 537,
+   "output_tokens": 34
+  },
+  {
+   "id": 386,
+   "pick": "pass",
+   "conf": 0.29,
+   "ms": 134.85,
+   "input_tokens": 491,
+   "output_tokens": 33
+  },
+  {
+   "id": 395,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 147.56,
+   "input_tokens": 508,
+   "output_tokens": 34
+  },
+  {
+   "id": 394,
+   "pick": "rework",
+   "conf": 0.97,
+   "ms": 111.31,
+   "input_tokens": 476,
+   "output_tokens": 34
+  },
+  {
+   "id": 403,
+   "pick": "rework",
+   "conf": 0.9,
+   "ms": 138.42,
+   "input_tokens": 459,
+   "output_tokens": 34
+  },
+  {
+   "id": 388,
+   "pick": "rework",
+   "conf": 0.49,
+   "ms": 128.1,
+   "input_tokens": 489,
+   "output_tokens": 34
+  },
+  {
+   "id": 400,
+   "pick": "rework",
+   "conf": 0.4,
+   "ms": 119.68,
+   "input_tokens": 452,
+   "output_tokens": 34
+  },
+  {
+   "id": 402,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 115.82,
+   "input_tokens": 498,
+   "output_tokens": 33
+  },
+  {
+   "id": 406,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 111.04,
+   "input_tokens": 531,
+   "output_tokens": 33
+  },
+  {
+   "id": 398,
+   "pick": "rework",
+   "conf": 0.36,
+   "ms": 137.09,
+   "input_tokens": 513,
+   "output_tokens": 34
+  },
+  {
+   "id": 397,
+   "pick": "rework",
+   "conf": 0.82,
+   "ms": 160.13,
+   "input_tokens": 518,
+   "output_tokens": 34
+  },
+  {
+   "id": 404,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 137.17,
+   "input_tokens": 450,
+   "output_tokens": 34
+  },
+  {
+   "id": 413,
+   "pick": "rework",
+   "conf": 0.55,
+   "ms": 157.62,
+   "input_tokens": 493,
+   "output_tokens": 34
+  },
+  {
+   "id": 408,
+   "pick": "pass",
+   "conf": 0.95,
+   "ms": 114.9,
+   "input_tokens": 512,
+   "output_tokens": 33
+  },
+  {
+   "id": 416,
+   "pick": "rework",
+   "conf": 0.96,
+   "ms": 149.99,
+   "input_tokens": 482,
+   "output_tokens": 34
+  },
+  {
+   "id": 407,
+   "pick": "rework",
+   "conf": 0.89,
+   "ms": 102.39,
+   "input_tokens": 499,
+   "output_tokens": 34
+  },
+  {
+   "id": 415,
+   "pick": "rework",
+   "conf": 0.46,
+   "ms": 133.16,
+   "input_tokens": 469,
+   "output_tokens": 34
+  },
+  {
+   "id": 412,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 139.25,
+   "input_tokens": 455,
+   "output_tokens": 34
+  },
+  {
+   "id": 417,
+   "pick": "pass",
+   "conf": 0.94,
+   "ms": 139.19,
+   "input_tokens": 505,
+   "output_tokens": 33
+  },
+  {
+   "id": 420,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 120.39,
+   "input_tokens": 501,
+   "output_tokens": 33
+  },
+  {
+   "id": 401,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 116.73,
+   "input_tokens": 502,
+   "output_tokens": 34
+  },
+  {
+   "id": 410,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 116.54,
+   "input_tokens": 459,
+   "output_tokens": 34
+  },
+  {
+   "id": 418,
+   "pick": "rework",
+   "conf": 0.79,
+   "ms": 145.57,
+   "input_tokens": 496,
+   "output_tokens": 34
+  },
+  {
+   "id": 421,
+   "pick": "rework",
+   "conf": 0.93,
+   "ms": 112.22,
+   "input_tokens": 497,
+   "output_tokens": 34
+  },
+  {
+   "id": 419,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 92.7,
+   "input_tokens": 495,
+   "output_tokens": 33
+  },
+  {
+   "id": 422,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 113.95,
+   "input_tokens": 468,
+   "output_tokens": 34
+  },
+  {
+   "id": 426,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 205.38,
+   "input_tokens": 492,
+   "output_tokens": 33
+  },
+  {
+   "id": 427,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 115.26,
+   "input_tokens": 532,
+   "output_tokens": 33
+  },
+  {
+   "id": 423,
+   "pick": "pass",
+   "conf": 0.86,
+   "ms": 104.3,
+   "input_tokens": 511,
+   "output_tokens": 33
+  },
+  {
+   "id": 428,
+   "pick": "rework",
+   "conf": 0.96,
+   "ms": 111.81,
+   "input_tokens": 489,
+   "output_tokens": 34
+  },
+  {
+   "id": 424,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 191.83,
+   "input_tokens": 459,
+   "output_tokens": 34
+  },
+  {
+   "id": 431,
+   "pick": "rework",
+   "conf": 0.54,
+   "ms": 97.5,
+   "input_tokens": 497,
+   "output_tokens": 34
+  },
+  {
+   "id": 409,
+   "pick": "pass",
+   "conf": 0.87,
+   "ms": 96.04,
+   "input_tokens": 513,
+   "output_tokens": 33
+  },
+  {
+   "id": 425,
+   "pick": "rework",
+   "conf": 0.07,
+   "ms": 141.12,
+   "input_tokens": 544,
+   "output_tokens": 34
+  },
+  {
+   "id": 430,
+   "pick": "rework",
+   "conf": 0.76,
+   "ms": 189.08,
+   "input_tokens": 523,
+   "output_tokens": 34
+  },
+  {
+   "id": 433,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 98.4,
+   "input_tokens": 446,
+   "output_tokens": 34
+  },
+  {
+   "id": 429,
+   "pick": "pass",
+   "conf": 0.92,
+   "ms": 106.01,
+   "input_tokens": 534,
+   "output_tokens": 33
+  },
+  {
+   "id": 432,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 132.63,
+   "input_tokens": 506,
+   "output_tokens": 33
+  },
+  {
+   "id": 435,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 188.73,
+   "input_tokens": 498,
+   "output_tokens": 33
+  },
+  {
+   "id": 439,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 112.59,
+   "input_tokens": 469,
+   "output_tokens": 34
+  },
+  {
+   "id": 434,
+   "pick": "rework",
+   "conf": 0.37,
+   "ms": 123.56,
+   "input_tokens": 498,
+   "output_tokens": 34
+  },
+  {
+   "id": 440,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 115.14,
+   "input_tokens": 454,
+   "output_tokens": 33
+  },
+  {
+   "id": 436,
+   "pick": "rework",
+   "conf": 0.85,
+   "ms": 174.05,
+   "input_tokens": 469,
+   "output_tokens": 34
+  },
+  {
+   "id": 443,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 102.69,
+   "input_tokens": 485,
+   "output_tokens": 34
+  },
+  {
+   "id": 438,
+   "pick": "pass",
+   "conf": 0.46,
+   "ms": 209.92,
+   "input_tokens": 502,
+   "output_tokens": 33
+  },
+  {
+   "id": 445,
+   "pick": "rework",
+   "conf": 0.92,
+   "ms": 209.95,
+   "input_tokens": 472,
+   "output_tokens": 34
+  },
+  {
+   "id": 437,
+   "pick": "pass",
+   "conf": 0.52,
+   "ms": 216.44,
+   "input_tokens": 508,
+   "output_tokens": 33
+  },
+  {
+   "id": 447,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 105.29,
+   "input_tokens": 506,
+   "output_tokens": 33
+  },
+  {
+   "id": 444,
+   "pick": "pass",
+   "conf": 0.91,
+   "ms": 98.47,
+   "input_tokens": 473,
+   "output_tokens": 33
+  },
+  {
+   "id": 441,
+   "pick": "pass",
+   "conf": 0.14,
+   "ms": 126.92,
+   "input_tokens": 530,
+   "output_tokens": 33
+  },
+  {
+   "id": 450,
+   "pick": "pass",
+   "conf": 0.92,
+   "ms": 139.42,
+   "input_tokens": 487,
+   "output_tokens": 33
+  },
+  {
+   "id": 448,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 104.28,
+   "input_tokens": 491,
+   "output_tokens": 34
+  },
+  {
+   "id": 449,
+   "pick": "rework",
+   "conf": 0.81,
+   "ms": 107.25,
+   "input_tokens": 454,
+   "output_tokens": 34
+  },
+  {
+   "id": 442,
+   "pick": "rework",
+   "conf": 0.94,
+   "ms": 162.48,
+   "input_tokens": 505,
+   "output_tokens": 34
+  },
+  {
+   "id": 454,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 118.45,
+   "input_tokens": 446,
+   "output_tokens": 34
+  },
+  {
+   "id": 452,
+   "pick": "rework",
+   "conf": 0.45,
+   "ms": 113.78,
+   "input_tokens": 525,
+   "output_tokens": 34
+  },
+  {
+   "id": 453,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 152.65,
+   "input_tokens": 475,
+   "output_tokens": 33
+  },
+  {
+   "id": 456,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 129.52,
+   "input_tokens": 494,
+   "output_tokens": 33
+  },
+  {
+   "id": 446,
+   "pick": "rework",
+   "conf": 0.66,
+   "ms": 112.39,
+   "input_tokens": 459,
+   "output_tokens": 34
+  },
+  {
+   "id": 451,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 129.89,
+   "input_tokens": 506,
+   "output_tokens": 34
+  },
+  {
+   "id": 455,
+   "pick": "rework",
+   "conf": 0.94,
+   "ms": 104.34,
+   "input_tokens": 494,
+   "output_tokens": 34
+  },
+  {
+   "id": 459,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 174.36,
+   "input_tokens": 496,
+   "output_tokens": 33
+  },
+  {
+   "id": 463,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 102.43,
+   "input_tokens": 466,
+   "output_tokens": 34
+  },
+  {
+   "id": 461,
+   "pick": "pass",
+   "conf": 0.93,
+   "ms": 119.1,
+   "input_tokens": 539,
+   "output_tokens": 33
+  },
+  {
+   "id": 460,
+   "pick": "rework",
+   "conf": 0.93,
+   "ms": 113.74,
+   "input_tokens": 479,
+   "output_tokens": 34
+  },
+  {
+   "id": 462,
+   "pick": "pass",
+   "conf": 0.97,
+   "ms": 101.29,
+   "input_tokens": 521,
+   "output_tokens": 33
+  },
+  {
+   "id": 457,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 212.13,
+   "input_tokens": 466,
+   "output_tokens": 34
+  },
+  {
+   "id": 458,
+   "pick": "pass",
+   "conf": 0.17,
+   "ms": 159.72,
+   "input_tokens": 488,
+   "output_tokens": 33
+  },
+  {
+   "id": 465,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 240.71,
+   "input_tokens": 511,
+   "output_tokens": 33
+  },
+  {
+   "id": 466,
+   "pick": "rework",
+   "conf": 0.31,
+   "ms": 93.18,
+   "input_tokens": 479,
+   "output_tokens": 34
+  },
+  {
+   "id": 464,
+   "pick": "rework",
+   "conf": 0.48,
+   "ms": 102.05,
+   "input_tokens": 505,
+   "output_tokens": 34
+  },
+  {
+   "id": 468,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 143.96,
+   "input_tokens": 492,
+   "output_tokens": 33
+  },
+  {
+   "id": 471,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 187.09,
+   "input_tokens": 512,
+   "output_tokens": 33
+  },
+  {
+   "id": 469,
+   "pick": "rework",
+   "conf": 0.63,
+   "ms": 108.91,
+   "input_tokens": 503,
+   "output_tokens": 34
+  },
+  {
+   "id": 470,
+   "pick": "rework",
+   "conf": 0.87,
+   "ms": 104.51,
+   "input_tokens": 478,
+   "output_tokens": 34
+  },
+  {
+   "id": 474,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 94.58,
+   "input_tokens": 483,
+   "output_tokens": 33
+  },
+  {
+   "id": 477,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 118.99,
+   "input_tokens": 495,
+   "output_tokens": 33
+  },
+  {
+   "id": 476,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 126.56,
+   "input_tokens": 504,
+   "output_tokens": 34
+  },
+  {
+   "id": 472,
+   "pick": "pass",
+   "conf": 0.55,
+   "ms": 123.04,
+   "input_tokens": 499,
+   "output_tokens": 33
+  },
+  {
+   "id": 479,
+   "pick": "rework",
+   "conf": 0.97,
+   "ms": 140.33,
+   "input_tokens": 467,
+   "output_tokens": 34
+  },
+  {
+   "id": 475,
+   "pick": "rework",
+   "conf": 0.61,
+   "ms": 229.44,
+   "input_tokens": 461,
+   "output_tokens": 34
+  },
+  {
+   "id": 473,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 145.09,
+   "input_tokens": 521,
+   "output_tokens": 34
+  },
+  {
+   "id": 483,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 119.27,
+   "input_tokens": 506,
+   "output_tokens": 33
+  },
+  {
+   "id": 478,
+   "pick": "rework",
+   "conf": 0.99,
+   "ms": 162.65,
+   "input_tokens": 485,
+   "output_tokens": 34
+  },
+  {
+   "id": 486,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 119.68,
+   "input_tokens": 471,
+   "output_tokens": 33
+  },
+  {
+   "id": 480,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 107.22,
+   "input_tokens": 520,
+   "output_tokens": 33
+  },
+  {
+   "id": 481,
+   "pick": "rework",
+   "conf": 0.92,
+   "ms": 146.95,
+   "input_tokens": 516,
+   "output_tokens": 34
+  },
+  {
+   "id": 482,
+   "pick": "pass",
+   "conf": 0.45,
+   "ms": 139.69,
+   "input_tokens": 510,
+   "output_tokens": 33
+  },
+  {
+   "id": 490,
+   "pick": "rework",
+   "conf": 0.97,
+   "ms": 138.81,
+   "input_tokens": 468,
+   "output_tokens": 34
+  },
+  {
+   "id": 488,
+   "pick": "rework",
+   "conf": 0.85,
+   "ms": 112.56,
+   "input_tokens": 472,
+   "output_tokens": 34
+  },
+  {
+   "id": 484,
+   "pick": "rework",
+   "conf": 0.98,
+   "ms": 104.66,
+   "input_tokens": 469,
+   "output_tokens": 34
+  },
+  {
+   "id": 489,
+   "pick": "pass",
+   "conf": 0.99,
+   "ms": 148.62,
+   "input_tokens": 490,
+   "output_tokens": 33
+  },
+  {
+   "id": 491,
+   "pick": "rework",
+   "conf": 0.66,
+   "ms": 130.12,
+   "input_tokens": 474,
+   "output_tokens": 34
+  },
+  {
+   "id": 487,
+   "pick": "pass",
+   "conf": 0.4,
+   "ms": 157.88,
+   "input_tokens": 470,
+   "output_tokens": 33
+  },
+  {
+   "id": 485,
+   "pick": "pass",
+   "conf": 0.98,
+   "ms": 131.92,
+   "input_tokens": 486,
+   "output_tokens": 33
+  },
+  {
+   "id": 492,
+   "pick": "pass",
+   "conf": 1.0,
+   "ms": 142.98,
+   "input_tokens": 489,
+   "output_tokens": 33
+  },
+  {
+   "id": 493,
+   "pick": "rework",
+   "conf": 0.91,
+   "ms": 197.1,
+   "input_tokens": 515,
+   "output_tokens": 34
+  },
+  {
+   "id": 495,
+   "pick": "pass",
+   "conf": 0.97,
+   "ms": 118.65,
+   "input_tokens": 514,
+   "output_tokens": 33
+  },
+  {
+   "id": 494,
+   "pick": "rework",
+   "conf": 0.16,
+   "ms": 185.98,
+   "input_tokens": 539,
+   "output_tokens": 34
+  },
+  {
+   "id": 498,
+   "pick": "pass",
+   "conf": 0.97,
+   "ms": 170.06,
+   "input_tokens": 496,
+   "output_tokens": 33
+  },
+  {
+   "id": 497,
+   "pick": "rework",
+   "conf": 0.87,
+   "ms": 145.05,
+   "input_tokens": 494,
+   "output_tokens": 34
+  },
+  {
+   "id": 34,
+   "pick": "rework",
+   "conf": 1.0,
+   "ms": 197.37,
+   "input_tokens": 438,
+   "output_tokens": 34
+  },
+  {
+   "id": 499,
+   "pick": "pass",
+   "conf": 0.14,
+   "ms": 159.58,
+   "input_tokens": 564,
+   "output_tokens": 33
+  },
+  {
+   "id": 467,
+   "pick": "rework",
+   "conf": 0.55,
+   "ms": 149.35,
+   "input_tokens": 546,
+   "output_tokens": 34
+  },
+  {
+   "id": 496,
+   "pick": "pass",
+   "conf": 0.23,
+   "ms": 98.52,
+   "input_tokens": 527,
+   "output_tokens": 33
+  }
+ ],
+ "measured": "2026-09-26 08:20",
+ "total_ms": 67719.7,
+ "input_tokens": 245809,
+ "cost_usd": 0.01032
+}

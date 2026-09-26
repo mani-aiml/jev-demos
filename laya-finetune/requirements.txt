@@ -1,0 +1,13 @@
+anthropic==1.8.0
+typesafe-sdk==0.7.1
+laya==0.3.5
+laya-mlx==0.2.0
+numpy==2.5.3
+torch==2.14.0
+transformers==5.17.0
+safetensors==0.8.0
+huggingface-hub==1.32.0
+matplotlib==3.11.2
+nbformat==5.11.1
+jupyterlab==4.6.4
+ipykernel==7.3.0

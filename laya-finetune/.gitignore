@@ -1,0 +1,6 @@
+.env
+__pycache__/
+.ipynb_checkpoints/
+# fine-tuned checkpoints are not redistributed; the scores they produced are kept
+runs/*/
+logs/

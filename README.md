@@ -8,6 +8,7 @@ The Agentic Enterprise on YouTube.
 |---|---|
 | [`jev-fetches-claude-writes/`](jev-fetches-claude-writes/) | two agents (Claude alone; Jev fetches, Claude writes), the lookup tools and data, offline tests, and the notebook that runs eight tasks both ways |
 | [`laya-vs-jev-judge/`](laya-vs-jev-judge/) | Jev and Laya grading the same 500 AI-written answers, zero-shot: the corpus, the reference judge's labels, the harness, the cascade maths and the recorded notebook |
+| [`laya-finetune/`](laya-finetune/) | Laya fine-tuned on the same grading job and scored against Jev on the same 500 items: the data pipeline and its three checks (test copies, class mix, planted labels), training, scoring, the Jev timing run and the notebook. The fine-tuned checkpoint is not included |
 
 ```bash
 cd <folder>
