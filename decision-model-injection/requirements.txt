@@ -1,0 +1,6 @@
+anthropic==1.8.0
+typesafe-sdk==0.7.1
+# only for the optional Laya engine
+laya==0.3.5
+torch==2.14.0
+transformers==5.17.0
