@@ -10,6 +10,7 @@ The Agentic Enterprise on YouTube.
 | [`laya-vs-jev-judge/`](laya-vs-jev-judge/) | Jev and Laya grading the same 500 AI-written answers, zero-shot: the corpus, the reference judge's labels, the harness, the cascade maths and the recorded notebook |
 | [`decision-model-prompt-injection/`](decision-model-prompt-injection/) | can you prompt-inject a decision model? Jev and Claude Haiku 4.5 as a review gate, against twelve hand-written emails with ten classic attacks and against real attacks from Microsoft's LLMail-Inject: the three wordings, the detector question, the harness and the LLMail sampler. Code only: no data, public or synthetic; `llmail_sample.py` fetches the dataset from the source |
 | [`laya-finetune/`](laya-finetune/) | Laya fine-tuned on the same grading job and scored against Jev on the same 500 items: the data pipeline and its three checks (test copies, class mix, planted labels), training, scoring, the Jev timing run and the notebook. The fine-tuned checkpoint is not included |
+| [`strands-decider/`](strands-decider/) | Strands Decider 2B on the same grading job and the same 500 items, out of the box and fine-tuned on Laya's rows with the same split, mix and seeds: scoring, the harness checks, its native adequacy format, the data conversion and the fine-tune. Code only: it reads `laya-finetune/data/`; no checkpoints |
 
 ```bash
 cd <folder>
@@ -22,5 +23,6 @@ All data in these demos is synthetic, made up for the demo it sits in and for no
 resemblance to real people, companies or records is purely coincidental. The one exception is
 `decision-model-prompt-injection/`, which holds no data at all: it downloads public attack emails from
 Microsoft's LLMail-Inject (MIT) at run time, and you bring your own hand-written test emails.
+`strands-decider/` holds no data either: it reads `laya-finetune/data/`.
 
 MIT licence for everything here.

@@ -1,0 +1,47 @@
+# Second seed: identical to judge.yaml except the seed-7 split, seed and output directory.
+# Continue v19 on the judging rows (finetune_decider.py). Everything not marked CHANGED is v19's own
+# recipe value (configs/train.yaml and the released train_config.json).
+
+train_files: ["data/judge_train_s7.jsonl"]   # CHANGED: Laya's 1,874 training rows x 2 questions
+val_files: ["data/judge_calib_s7.jsonl"]     # CHANGED: Laya's 208 calibration rows; val loss only, never trained on
+
+base_model: "Qwen/Qwen3.5-2B-Base"        # unused: the loader returns v19 itself
+num_slots: 40                             # CHANGED: their rule, "must match the largest option count the corpus contains"; ours is 40
+head_type: "pointer"
+pointer_dim: 256
+head_init: "random"                       # unused: v19's trained pointer head is kept
+kl_frozen_weight: 0.3                     # rows with <= 9 options only (the verdict); the 40-way rows are skipped
+teacher_file: null                        # CHANGED: no teacher for our rows
+teacher_weight: 0.0
+head_dropout: 0.05
+max_length: 4096
+
+use_lora: true
+lora_r: 16
+lora_alpha: 32
+lora_targets: ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj",
+               "in_proj_qkv", "in_proj_z", "in_proj_a", "in_proj_b", "out_proj"]
+freeze_torso: false
+
+epochs: 4                                 # CHANGED: Laya's 4 passes over the same rows (v19: 1 pass over ~38k)
+micro_batch_size: 8
+grad_accum: 4
+lr: 0.0001
+head_lr: 0.0001                           # CHANGED from 0.001: that rate is for a random head; this one is trained
+weight_decay: 0.01
+warmup_ratio: 0.03
+max_grad_norm: 1.0
+gradient_checkpointing: true              # CHANGED: v19 trained on 80 GB H100s without it; 24 GB needs it (memory only)
+
+shuffle_options: true                     # option order re-drawn every example, every epoch
+group_by_length: true
+length_group_mega: 50
+precompute_frozen_kl: true
+ordinal_smoothing: 0.1
+reverse_score_prob: 0.5
+
+output_dir: "runs/decider-judge-s7"
+seed: 7                                   # CHANGED: Laya's second seed (row order, calibration split, init noise)
+log_every: 20
+eval_every: 50
+save_every: 0
