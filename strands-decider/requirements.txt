@@ -1,0 +1,8 @@
+# Linux with an NVIDIA GPU (training needs it; scoring also runs on CUDA here).
+# Install torch from the CUDA 12.6 index first:
+#   pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu126
+torch==2.7.1
+transformers==5.17.0
+peft==0.21.0
+flash-linear-attention==0.5.2
+strands-decider @ git+https://github.com/strands-labs/strands-decider@f91487ab8f7e4b4967ae57e46b8d90e91e67d616
