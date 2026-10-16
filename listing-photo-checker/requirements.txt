@@ -1,0 +1,6 @@
+typesafe-sdk==0.7.5
+pillow==12.3.0
+# only for the two local arms (SigLIP 2 + OWLv2, Qwen3-VL-4B)
+torch==2.14.1
+transformers==5.19.0
+accelerate
