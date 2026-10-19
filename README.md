@@ -11,6 +11,7 @@ The Agentic Enterprise on YouTube.
 | [`decision-model-prompt-injection/`](decision-model-prompt-injection/) | can you prompt-inject a decision model? Jev and Claude Haiku 4.5 as a review gate, against twelve hand-written emails with ten classic attacks and against real attacks from Microsoft's LLMail-Inject: the three wordings, the detector question, the harness and the LLMail sampler. Code only: no data, public or synthetic; `llmail_sample.py` fetches the dataset from the source |
 | [`laya-finetune/`](laya-finetune/) | Laya fine-tuned on the same grading job and scored against Jev on the same 500 items: the data pipeline and its three checks (test copies, class mix, planted labels), training, scoring, the Jev timing run and the notebook. The fine-tuned checkpoint is not included |
 | [`strands-decider/`](strands-decider/) | Strands Decider 2B on the same grading job and the same 500 items, out of the box and fine-tuned on Laya's rows with the same split, mix and seeds: scoring, the harness checks, its native adequacy format, the data conversion and the fine-tune. Code only: it reads `laya-finetune/data/`; no checkpoints |
+| [`listing-photo-checker/`](listing-photo-checker/) | Jev looking at photos: marketplace picture rules (eBay, Walmart) as plain-English questions, the box for frame fill, corner tiles for small details, and the same rules on two local models (SigLIP 2 + OWLv2, Qwen3-VL-4B). Code only: no photos, no labels; bring your own or rebuild the test set with `photos/generate.sh` and `photos/make_set.py` |
 
 ```bash
 cd <folder>

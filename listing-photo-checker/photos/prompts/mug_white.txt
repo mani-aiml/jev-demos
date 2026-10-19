@@ -1,0 +1,7 @@
+Use your image generation tool to create ONE image. Do not write any code or files yourself.
+
+Image: a square 1:1 e-commerce product photo of a plain matte teal ceramic coffee mug with a handle on the right,
+front view turned slightly right, standing on a seamless pure white studio background (no horizon line, no texture,
+no props). The mug fills about 80% of the frame height and is centred. Soft even studio lighting, a faint natural
+contact shadow under the base only. Sharp focus, realistic photograph.
+No text, no logo, no pattern, no watermark, no border, no people, no hands.
